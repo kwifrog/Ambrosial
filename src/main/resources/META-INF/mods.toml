@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT License"
+issueTrackerURL="https://github.com/KiwiOfLesbos/Ambrosial/issues"
+
+[[mods]]
+modId="ambrosial"
+version="1.16.5-1.0.0"
+displayName="Ambrosial"
+displayURL="https://github.com/KiwiOfLesbos/Ambrosial/"
+logoFile="logo.png"
+logoBlur=false
+credits="Thanks to all the snails in my backyard."
+authors="KiwiOfLesbos"
+description="A cozy, aesthetic mod that functions best with Farmer's Delight"
+itemIcon="minecraft:bread"
+
+[[dependencies.ambrosial]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.ambrosial]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
