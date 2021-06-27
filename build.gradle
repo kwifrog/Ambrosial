@@ -8,12 +8,12 @@ buildscript {
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
-apply plugin: 'eclipse'
+// apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '${mod_version}'
-group = 'com.kiwi.${mod_id}'
-archivesBaseName = '${mod_id}'
+version = mod_version
+group = mod_group
+archivesBaseName = mod_id
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
@@ -24,6 +24,9 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
+
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
@@ -38,6 +41,8 @@ minecraft {
         server {
             workingDirectory project.file('run')
 
+            property 'mixin.env.disableRefMap', 'true'
+
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
 
@@ -50,6 +55,8 @@ minecraft {
 
         data {
             workingDirectory project.file('run')
+
+            property 'mixin.env.disableRefMap', 'true'
 
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
@@ -66,21 +73,9 @@ minecraft {
 }
 
 repositories {
-    maven {
-        // location of the maven that hosts JEI files
-        name = "Progwml6 maven"
-        url = "https://dvs1.progwml6.com/files/maven/"
-    }
-    maven {
-        // location of a maven mirror for JEI files, as a fallback
-        name = "ModMaven"
-        url = "https://modmaven.k-4u.nl"
-    }
-
-    maven {
-        name = "Curse Maven"
-        url = "https://www.cursemaven.com"
-    }
+    maven { url = "https://dvs1.progwml6.com/files/maven/" }
+    maven { url = "https://modmaven.k-4u.nl" }
+    maven { url = "https://www.cursemaven.com" }
 }
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
@@ -89,9 +84,13 @@ dependencies {
 
     minecraft 'net.minecraftforge:forge:1.16.5-36.1.0'
 
+    implementation fg.deobf("curse.maven:farmers_delight-398521:3357442")
+
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
     runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
     runtimeOnly fg.deobf("curse.maven:appleskin-248787:3358019")
+    runtimeOnly fg.deobf("curse.maven:farmers_delight-398521:3357442")
+    runtimeOnly fg.deobf("curse.maven:the_one_probe-245211:3319255")
 
 }
 
