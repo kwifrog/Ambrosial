@@ -1,0 +1,30 @@
+modLoader="javafml" #mandatory
+loaderVersion="[36,)"
+license="MIT License"
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+
+[[mods]]
+modId="ambrosial" #mandatory
+version="1.16.5-0.0.1"
+displayName="Ambrosial"
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+logoFile="logo.png"
+logoBlur=false
+credits="Thanks to all the snails in my backyard."
+authors="KiwiOfLesbos"
+description="A cozy, aesthetic mod that functions best with Farmer's Delight"
+itemIcon="minecraft:bread"
+
+[[dependencies.ambrosial]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.ambrosial]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
