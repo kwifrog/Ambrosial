@@ -14,6 +14,8 @@ public class Ambrosial
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "ambrosial";
 
+    public static final  AmbrosialItemGroup ITEM_GROUP = new AmbrosialItemGroup(Ambrosial.MODID);
+
     public Ambrosial() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
