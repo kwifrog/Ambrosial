@@ -2,7 +2,6 @@ package com.kiwi.ambrosial.data;
 
 import com.kiwi.ambrosial.Ambrosial;
 import net.minecraft.data.DataGenerator;
-import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -17,14 +16,14 @@ public class ModItemModels  extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
+        ModelFile itemGenerated = getExistingFile(mcLoc(GENERATED));
 
         builder(itemGenerated, "toast");
         builder(itemGenerated, "sliced_bread");
         builder(itemGenerated, "canning_jar");
     }
 
-    private ItemModelBuilder builder(ModelFile itemGenerated, String name) {
-        return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + name);
+    private void builder(ModelFile itemGenerated, String name) {
+        getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + name);
     }
 }
