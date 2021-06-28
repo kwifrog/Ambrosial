@@ -1,8 +1,9 @@
 package com.kiwi.ambrosial;
 
+import com.kiwi.ambrosial.registry.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import vectorwing.farmersdelight.registry.ModItems;
+import net.minecraft.util.NonNullList;
 
 import javax.annotation.Nonnull;
 
@@ -16,7 +17,10 @@ public class AmbrosialItemGroup extends ItemGroup {
     @Override
     @Nonnull
     public ItemStack makeIcon() {
-        return new ItemStack(ModItems.STUFFED_PUMPKIN_BLOCK.get());
+        return new ItemStack(ModItems.SLICED_BREAD.get());
     }
 
+    private void registerIngredients(NonNullList<ItemStack> items) {
+        items.add(new ItemStack(ModItems.SLICED_BREAD.get()));
+    }
 }
