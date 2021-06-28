@@ -1,5 +1,8 @@
 {
   "itemGroup.ambrosial": "Ambrosial",
 
-  "item.ambrosial.sliced_bread": "Sliced Bread"
+  "item.ambrosial.canning_jar": "Canning Jar",
+
+  "item.ambrosial.sliced_bread": "Sliced Bread",
+  "item.ambrosial.toast": "Toast"
 }

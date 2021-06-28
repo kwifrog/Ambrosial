@@ -20,7 +20,11 @@ public class AmbrosialItemGroup extends ItemGroup {
         return new ItemStack(ModItems.SLICED_BREAD.get());
     }
 
-    private void registerIngredients(NonNullList<ItemStack> items) {
+    private void  registerItems(NonNullList<ItemStack> items) {
+        items.add(new ItemStack(ModItems.CANNING_JAR.get()));
+    }
+
+    private void registerFood(NonNullList<ItemStack> items) {
         items.add(new ItemStack(ModItems.SLICED_BREAD.get()));
     }
 }
