@@ -1,8 +1,8 @@
 package com.kiwi.ambrosial.data;
 
 import com.kiwi.ambrosial.Ambrosial;
-import com.kiwi.ambrosial.blocks.DaikonsBlock;
-import com.kiwi.ambrosial.blocks.KiwisBlock;
+import com.kiwi.ambrosial.blocks.DaikonBlock;
+import com.kiwi.ambrosial.blocks.KiwiBlock;
 import com.kiwi.ambrosial.registry.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
@@ -32,8 +32,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        this.stageBlock(ModBlocks.DAIKON_CROP.get(), DaikonsBlock.AGE);
-        //this.stageBlock(ModBlocks.KIWI_CROP.get(), KiwisBlock.AGE);
+        this.stageBlock(ModBlocks.DAIKON_CROP.get(), DaikonBlock.AGE);
+        this.stageBlock(ModBlocks.KIWI_CROP.get(), KiwiBlock.AGE);
     }
 
     public void stageBlock(Block block, IntegerProperty ageProperty, Property<?>... ignored) {

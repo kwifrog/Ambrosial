@@ -11,7 +11,7 @@ import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 
-public class DaikonsBlock extends CropsBlock {
+public class DaikonBlock extends CropsBlock {
 
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
@@ -24,7 +24,7 @@ public class DaikonsBlock extends CropsBlock {
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D)
     };
 
-    public DaikonsBlock(Properties properties) {
+    public DaikonBlock(Properties properties) {
         super(properties);
     }
 

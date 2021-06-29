@@ -11,7 +11,7 @@ import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 
-public class KiwisBlock extends CropsBlock {
+public class KiwiBlock extends CropsBlock {
 
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
@@ -24,7 +24,7 @@ public class KiwisBlock extends CropsBlock {
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D)
     };
 
-    public KiwisBlock(Properties properties) {
+    public KiwiBlock(Properties properties) {
         super(properties);
     }
 
@@ -34,7 +34,7 @@ public class KiwisBlock extends CropsBlock {
     }
 
     protected IItemProvider getSeedsItem() {
-        return ModItems.DAIKON_SEEDS.get();
+        return ModItems.KIWI_SEEDS.get();
     }
 
     @Override
