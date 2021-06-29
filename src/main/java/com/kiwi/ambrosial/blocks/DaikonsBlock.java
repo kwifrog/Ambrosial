@@ -30,7 +30,7 @@ public class DaikonsBlock extends CropsBlock {
 
     @Override
     public BlockState getPlant(IBlockReader world, BlockPos pos) {
-        return ModBlocks.KIWI_CROP.get().getBlock().defaultBlockState();
+        return ModBlocks.DAIKON_CROP.get().getBlock().defaultBlockState();
     }
 
     protected IItemProvider getSeedsItem() {

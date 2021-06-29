@@ -12,8 +12,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class ClientEventHandler {
 
     public static void init(final FMLClientSetupEvent event) {
-        RenderTypeLookup.setRenderLayer(ModBlocks.KIWI_CROP.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.DAIKON_CROP.get(), RenderType.cutout());
+        RenderType cutout = RenderType.cutout();
+        RenderTypeLookup.setRenderLayer(ModBlocks.KIWI_CROP.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ModBlocks.DAIKON_CROP.get(), cutout);
     }
 
 }

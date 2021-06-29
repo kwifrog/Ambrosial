@@ -4,7 +4,7 @@ import com.kiwi.ambrosial.Ambrosial;
 import com.kiwi.ambrosial.blocks.DaikonsBlock;
 import com.kiwi.ambrosial.blocks.KiwisBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
+import net.minecraft.block.Blocks;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -16,7 +16,7 @@ public class ModBlocks {
 
     // Crops
     public static RegistryObject<Block> KIWI_CROP = BLOCKS.register("kiwis",
-            () -> new KiwisBlock(Block.Properties.of(Material.PLANT).noCollission().instabreak().randomTicks()));
+            () -> new KiwisBlock(Block.Properties.copy(Blocks.WHEAT)));
     public static RegistryObject<Block> DAIKON_CROP = BLOCKS.register("daikons",
-            () -> new DaikonsBlock(Block.Properties.of(Material.PLANT).noCollission().instabreak().randomTicks()));
+            () -> new DaikonsBlock(Block.Properties.copy(Blocks.WHEAT)));
 }

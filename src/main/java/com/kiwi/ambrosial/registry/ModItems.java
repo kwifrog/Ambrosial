@@ -22,7 +22,7 @@ public class ModItems {
     public  static  final  RegistryObject<Item> KIWI_SEEDS = ITEMS.register("kiwi_seeds",
             () -> new BlockNamedItem(ModBlocks.KIWI_CROP.get(), new Item.Properties().tab(Ambrosial.ITEM_GROUP)));
     public  static  final  RegistryObject<Item> DAIKON_SEEDS = ITEMS.register("daikon_seeds",
-            () -> new  BlockNamedItem(ModBlocks.DAIKON_CROP.get(),new Item.Properties().tab(Ambrosial.ITEM_GROUP)));
+            () -> new BlockNamedItem(ModBlocks.DAIKON_CROP.get(),new Item.Properties().tab(Ambrosial.ITEM_GROUP)));
 
     // Food
     public static final RegistryObject<Item> SLICED_BREAD = ITEMS.register(
