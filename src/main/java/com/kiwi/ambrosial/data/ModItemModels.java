@@ -23,6 +23,7 @@ public class ModItemModels  extends ItemModelProvider {
         builder(itemGenerated, "canning_jar");
         builder(itemGenerated, "daikon");
         builder(itemGenerated, "kiwi");
+        builder(itemGenerated, "daikon_seeds");
     }
 
     private void builder(ModelFile itemGenerated, String name) {

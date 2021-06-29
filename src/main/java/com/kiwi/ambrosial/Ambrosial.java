@@ -1,5 +1,6 @@
 package com.kiwi.ambrosial;
 
+import com.kiwi.ambrosial.registry.ModBlocks;
 import com.kiwi.ambrosial.registry.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +20,7 @@ public class Ambrosial
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

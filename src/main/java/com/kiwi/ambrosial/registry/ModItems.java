@@ -2,6 +2,7 @@ package com.kiwi.ambrosial.registry;
 
 import com.kiwi.ambrosial.Ambrosial;
 import com.kiwi.ambrosial.items.FoodItems;
+import net.minecraft.item.BlockNamedItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,11 @@ public class ModItems {
             "kiwi", () -> new Item(new Item.Properties().food(FoodItems.KIWI).tab(Ambrosial.ITEM_GROUP)));
     public static final RegistryObject<Item> DAIKON = ITEMS.register(
             "daikon", () -> new Item(new Item.Properties().food(FoodItems.DAIKON).tab(Ambrosial.ITEM_GROUP)));
+    // Seeds
+    public  static  final  RegistryObject<Item> KIWI_SEEDS = ITEMS.register("kiwi_seeds",
+            () -> new BlockNamedItem(ModBlocks.KIWI_CROP.get(), new Item.Properties().tab(Ambrosial.ITEM_GROUP)));
+    public  static  final  RegistryObject<Item> DAIKON_SEEDS = ITEMS.register("daikon_seeds",
+            () -> new  BlockNamedItem(ModBlocks.DAIKON_CROP.get(),new Item.Properties().tab(Ambrosial.ITEM_GROUP)));
 
     // Food
     public static final RegistryObject<Item> SLICED_BREAD = ITEMS.register(
