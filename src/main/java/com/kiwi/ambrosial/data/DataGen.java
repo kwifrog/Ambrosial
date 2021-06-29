@@ -12,6 +12,7 @@ public class DataGen {
     public static void gatherData(GatherDataEvent event) {
         DataGenerator gen = event.getGenerator();
         if (event.includeClient()) {
+            gen.addProvider(new ModBlockStateProvider(gen, event.getExistingFileHelper()));
             gen.addProvider(new ModItemModels(gen, event.getExistingFileHelper()));
         }
 
