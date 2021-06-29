@@ -23,3 +23,10 @@ edc5bbc7fc45082b669b2998660d7256c74198d2 assets/ambrosial/models/item/daikon.jso
 89e65fdf50af742a7d516660ca064461b210cb3d assets/ambrosial/models/item/kiwi_seeds.json
 621c70a286defdbf0048825bde308fb24e7aa6f1 assets/ambrosial/models/item/sliced_bread.json
 4dc9c9e4890119f2e689acbdc8f4b58caa57b8f3 assets/ambrosial/models/item/toast.json
+f9d8be5b456a56647330503e1d357de0e7ef4c87 data/ambrosial/tags/items/crops/kiwi.json
+263af853b049adacc20eabd215282af712709e06 data/ambrosial/tags/items/crops/radish.json
+98671211380045e852189cf6875b9d0e115f2cb6 data/ambrosial/tags/items/seeds/kiwi.json
+b0390ed73fb842c7941c396ea51632029051bad6 data/ambrosial/tags/items/seeds/radish.json
+acb3f5adaeac98b5d8247c4e01eabf4546176d2a data/forge/tags/items/bread/wheat.json
+a3e4152327fc3e36105adef14bd347529aa73e7f data/forge/tags/items/crops.json
+9be2c6e0fc662a584a3009c05825b7143eca19a8 data/forge/tags/items/seeds.json
