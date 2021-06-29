@@ -5,10 +5,10 @@ import net.minecraft.item.Food;
 public class FoodItems {
 
     // Crops
-    public static final Food DAIKON = (new Food.Builder())
-            .nutrition(1).saturationMod(0.3f).build();
     public static final Food KIWI = (new Food.Builder())
-            .nutrition(3).saturationMod(0.4f).build();
+            .nutrition(2).saturationMod(0.5f).build();
+    public static final Food DAIKON = (new Food.Builder())
+            .nutrition(2).saturationMod(0.3f).build();
 
     // Spreads
 

@@ -13,10 +13,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Ambrosial.MODID);
 
     // Crops
-    public static final RegistryObject<Item> DAIKON = ITEMS.register(
-            "radish", () -> new Item(new Item.Properties().food(FoodItems.DAIKON).tab(Ambrosial.ITEM_GROUP)));
     public static final RegistryObject<Item> KIWI = ITEMS.register(
             "kiwi", () -> new Item(new Item.Properties().food(FoodItems.KIWI).tab(Ambrosial.ITEM_GROUP)));
+    public static final RegistryObject<Item> DAIKON = ITEMS.register(
+            "daikon", () -> new Item(new Item.Properties().food(FoodItems.DAIKON).tab(Ambrosial.ITEM_GROUP)));
 
     // Food
     public static final RegistryObject<Item> SLICED_BREAD = ITEMS.register(
