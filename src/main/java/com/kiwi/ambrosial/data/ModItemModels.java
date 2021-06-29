@@ -21,8 +21,8 @@ public class ModItemModels  extends ItemModelProvider {
         builder(itemGenerated, "toast");
         builder(itemGenerated, "sliced_bread");
         builder(itemGenerated, "canning_jar");
-        //builder(itemGenerated, "radish");
-        //builder(itemGenerated, "kiwi");
+        builder(itemGenerated, "radish");
+        builder(itemGenerated, "kiwi");
     }
 
     private void builder(ModelFile itemGenerated, String name) {
