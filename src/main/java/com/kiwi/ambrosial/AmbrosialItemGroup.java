@@ -30,7 +30,7 @@ public class AmbrosialItemGroup extends ItemGroup {
     }
 
     private void registerCrops(NonNullList<ItemStack> items) {
-        items.add(new ItemStack(ModItems.RADISH.get()));
+        items.add(new ItemStack(ModItems.DAIKON.get()));
         items.add(new ItemStack(ModItems.KIWI.get()));
     }
 

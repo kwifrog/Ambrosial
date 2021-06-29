@@ -21,7 +21,7 @@ public class ModItemModels  extends ItemModelProvider {
         builder(itemGenerated, "toast");
         builder(itemGenerated, "sliced_bread");
         builder(itemGenerated, "canning_jar");
-        builder(itemGenerated, "radish");
+        builder(itemGenerated, "daikon");
         builder(itemGenerated, "kiwi");
     }
 
