@@ -8,13 +8,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ambrosial:daikon"
+          "name": "ambrosial:kiwi"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "ambrosial:daikons",
+          "block": "ambrosial:kiwis",
           "properties": {
             "age": "7"
           }
@@ -24,8 +24,8 @@
         {
           "function": "minecraft:set_count",
           "count": {
-            "min": 1.0,
-            "max": 2.0,
+            "min": 2.0,
+            "max": 3.0,
             "type": "minecraft:uniform"
           }
         },
@@ -45,7 +45,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ambrosial:daikon_seeds"
+          "name": "ambrosial:kiwi_seeds"
         }
       ]
     }
