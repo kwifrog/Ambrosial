@@ -2,7 +2,8 @@ package com.kiwi.ambrosial.registry;
 
 import com.kiwi.ambrosial.Ambrosial;
 import com.kiwi.ambrosial.blocks.DaikonBlock;
-import com.kiwi.ambrosial.blocks.KiwiBlock;
+import com.kiwi.ambrosial.blocks.KiwiBushBlock;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.fml.RegistryObject;
@@ -17,7 +18,7 @@ public class ModBlocks {
 
     // Crops
     public static RegistryObject<Block> KIWI_CROP = BLOCKS.register("kiwis",
-            () -> new KiwiBlock(Block.Properties.copy(Blocks.WHEAT)));
+            () -> new KiwiBushBlock(AbstractBlock.Properties.copy(Blocks.WHEAT)));
     public static RegistryObject<Block> DAIKON_CROP = BLOCKS.register("daikons",
-            () -> new DaikonBlock(Block.Properties.copy(Blocks.WHEAT)));
+            () -> new DaikonBlock(AbstractBlock.Properties.copy(Blocks.WHEAT)));
 }

@@ -2,6 +2,7 @@ package com.kiwi.ambrosial;
 
 import com.kiwi.ambrosial.registry.ModBlocks;
 import com.kiwi.ambrosial.registry.ModItems;
+import com.kiwi.ambrosial.registry.ModSounds;
 import com.kiwi.ambrosial.setup.ClientEventHandler;
 import com.kiwi.ambrosial.setup.CommonEventHandler;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,7 @@ public class Ambrosial
 
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
+        ModSounds.SOUNDS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

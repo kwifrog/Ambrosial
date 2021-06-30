@@ -33,7 +33,8 @@ public class DaikonBlock extends CropsBlock {
         return ModBlocks.DAIKON_CROP.get().getBlock().defaultBlockState();
     }
 
-    protected IItemProvider getSeedsItem() {
+    @Override
+    protected IItemProvider getBaseSeedId() {
         return ModItems.DAIKON_SEEDS.get();
     }
 

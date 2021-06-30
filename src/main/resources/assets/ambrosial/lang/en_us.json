@@ -12,5 +12,7 @@
   "block.ambrosial.kiwis": "Kiwi",
 
   "item.ambrosial.sliced_bread": "Sliced Bread",
-  "item.ambrosial.toast": "Toast"
+  "item.ambrosial.toast": "Toast",
+
+  "ambrosial.subtitles.kiwi.pick": "Kiwis pop"
 }
