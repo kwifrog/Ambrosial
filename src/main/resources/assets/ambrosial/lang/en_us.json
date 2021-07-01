@@ -14,5 +14,8 @@
   "item.ambrosial.sliced_bread": "Sliced Bread",
   "item.ambrosial.toast": "Toast",
 
-  "ambrosial.subtitles.kiwi.pick": "Kiwis pop"
+  "ambrosial.subtitles.kiwi.pick": "Kiwis pop",
+
+  "key.showTags": "Show Tags",
+  "tooltip.showTags": "Press §bShift §fto Show Tags"
 }

@@ -34,6 +34,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
 
         // Meals
+
+        // Blocks
+        copy(ModTags.Blocks.SEA_PICKLE_PLANTABLE, ModTags.Items.SEA_PICKLE_PLANTABLE);
     }
 
 }
