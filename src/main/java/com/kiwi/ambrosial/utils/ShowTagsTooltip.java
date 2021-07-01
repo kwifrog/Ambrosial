@@ -1,5 +1,6 @@
 package com.kiwi.ambrosial.utils;
 
+import com.kiwi.ambrosial.setup.Config;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.util.InputMappings;
@@ -28,7 +29,6 @@ public class ShowTagsTooltip {
 
     public ShowTagsTooltip() {
         ClientRegistry.registerKeyBinding(showTagsBind);
-
     }
 
     private boolean isKeyBindDown(KeyBinding bind) {
@@ -41,6 +41,8 @@ public class ShowTagsTooltip {
 
     @SubscribeEvent
     public void onTooltip(ItemTooltipEvent event) {
+        if (!Config.SHOW_TOOLTIP_TAGS.get())
+            return;
         if (event == null) return;
         List<ITextComponent> toolTip = event.getToolTip();
         if (!isKeyBindDown(showTagsBind)) {
