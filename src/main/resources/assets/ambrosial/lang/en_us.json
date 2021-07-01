@@ -17,6 +17,6 @@
   "ambrosial.subtitles.kiwi.pick": "Kiwis pop",
 
   "key.showTags": "Show Tags",
-  "tooltip.showTags": "§bPress %s §bfor Tags",
+  "tooltip.showTags": "§bHold %s §bfor Tags",
   "tooltip.tag.prefix": "%s"
 }

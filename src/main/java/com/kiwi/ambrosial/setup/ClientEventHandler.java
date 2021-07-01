@@ -2,7 +2,7 @@ package com.kiwi.ambrosial.setup;
 
 import com.kiwi.ambrosial.Ambrosial;
 import com.kiwi.ambrosial.registry.ModBlocks;
-import com.kiwi.ambrosial.utils.ShowTagsTooltip;
+import com.kiwi.ambrosial.utils.TagTooltip;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;
@@ -17,7 +17,7 @@ public class ClientEventHandler {
         RenderTypeLookup.setRenderLayer(ModBlocks.KIWI_CROP.get(), cutout);
         RenderTypeLookup.setRenderLayer(ModBlocks.DAIKON_CROP.get(), cutout);
 
-        ShowTagsTooltip.init();
+        TagTooltip.init();
     }
 
 }
