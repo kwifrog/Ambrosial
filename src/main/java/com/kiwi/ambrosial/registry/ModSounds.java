@@ -12,4 +12,7 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> ITEM_KIWI_PICK_FROM_BUSH = SOUNDS.register("item.kiwi.pick_from_bush",
             () -> new SoundEvent(new ResourceLocation(Ambrosial.MODID, "item.kiwi.pick_from_bush")));
+
+    public static final RegistryObject<SoundEvent> ITEM_PICKLE_PICK_FROM_BUSH = SOUNDS.register("item.pickle.pick_from_bush",
+            () -> new SoundEvent(new ResourceLocation(Ambrosial.MODID, "item.pickle.pick_from_bush")));
 }

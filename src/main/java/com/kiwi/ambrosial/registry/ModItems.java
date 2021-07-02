@@ -23,6 +23,8 @@ public class ModItems {
             () -> new BlockNamedItem(ModBlocks.KIWI_CROP.get(), new Item.Properties().tab(Ambrosial.ITEM_GROUP)));
     public  static  final  RegistryObject<Item> DAIKON_SEEDS = ITEMS.register("daikon_seeds",
             () -> new BlockNamedItem(ModBlocks.DAIKON_CROP.get(),new Item.Properties().tab(Ambrosial.ITEM_GROUP)));
+    public static final RegistryObject<Item> PICKLE_SPORES = ITEMS.register("pickle_spores",
+            () -> new BlockNamedItem(ModBlocks.PICKLE_CROP.get(), new Item.Properties().tab(Ambrosial.ITEM_GROUP)));
 
     // Food
     public static final RegistryObject<Item> SLICED_BREAD = ITEMS.register(

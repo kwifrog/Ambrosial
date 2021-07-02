@@ -61,7 +61,7 @@ public class GrowableBushBlock extends BushBlock implements IGrowable {
     }
 
     protected int getBonemealAgeIncrease(World worldIn) {
-        return MathHelper.nextInt(worldIn.random, 2, 5);
+        return MathHelper.nextInt(worldIn.random, 2, 4);
     }
 
    @Override
@@ -87,5 +87,4 @@ public class GrowableBushBlock extends BushBlock implements IGrowable {
     protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(AGE);
    }
-
 }

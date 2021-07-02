@@ -16,6 +16,7 @@ public class ClientEventHandler {
         RenderType cutout = RenderType.cutout();
         RenderTypeLookup.setRenderLayer(ModBlocks.KIWI_CROP.get(), cutout);
         RenderTypeLookup.setRenderLayer(ModBlocks.DAIKON_CROP.get(), cutout);
+        RenderTypeLookup.setRenderLayer(ModBlocks.PICKLE_CROP.get(),cutout);
 
         TagTooltip.init();
     }
