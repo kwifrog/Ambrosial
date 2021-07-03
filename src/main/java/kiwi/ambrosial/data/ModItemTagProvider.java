@@ -1,8 +1,8 @@
-package com.kiwi.ambrosial.data;
+package kiwi.ambrosial.data;
 
-import com.kiwi.ambrosial.Ambrosial;
-import com.kiwi.ambrosial.registry.ModItems;
-import com.kiwi.ambrosial.registry.ModTags;
+import kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.registry.ModItems;
+import kiwi.ambrosial.registry.ModTags;
 import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.ItemTagsProvider;

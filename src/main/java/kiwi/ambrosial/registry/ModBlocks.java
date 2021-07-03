@@ -1,9 +1,9 @@
-package com.kiwi.ambrosial.registry;
+package kiwi.ambrosial.registry;
 
-import com.kiwi.ambrosial.Ambrosial;
-import com.kiwi.ambrosial.blocks.DaikonBlock;
-import com.kiwi.ambrosial.blocks.FertilePickleBlock;
-import com.kiwi.ambrosial.blocks.KiwiBushBlock;
+import kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.blocks.DaikonBlock;
+import kiwi.ambrosial.blocks.FertilePickleBlock;
+import kiwi.ambrosial.blocks.KiwiBushBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

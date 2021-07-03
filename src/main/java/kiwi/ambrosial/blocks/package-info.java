@@ -1,6 +1,6 @@
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
-package com.kiwi.ambrosial.blocks;
+package kiwi.ambrosial.blocks;
 
 import mcp.MethodsReturnNonnullByDefault;
 

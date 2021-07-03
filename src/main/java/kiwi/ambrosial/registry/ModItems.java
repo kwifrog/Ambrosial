@@ -1,7 +1,7 @@
-package com.kiwi.ambrosial.registry;
+package kiwi.ambrosial.registry;
 
-import com.kiwi.ambrosial.Ambrosial;
-import com.kiwi.ambrosial.items.FoodItems;
+import kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.items.FoodItems;
 import net.minecraft.item.BlockNamedItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;

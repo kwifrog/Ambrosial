@@ -1,4 +1,4 @@
-package com.kiwi.ambrosial.blocks;
+package kiwi.ambrosial.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.state.IntegerProperty;

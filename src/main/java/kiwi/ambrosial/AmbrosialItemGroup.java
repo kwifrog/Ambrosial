@@ -1,6 +1,6 @@
-package com.kiwi.ambrosial;
+package kiwi.ambrosial;
 
-import com.kiwi.ambrosial.registry.ModItems;
+import kiwi.ambrosial.registry.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;

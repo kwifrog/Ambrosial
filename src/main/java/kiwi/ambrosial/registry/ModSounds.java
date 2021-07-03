@@ -1,6 +1,6 @@
-package com.kiwi.ambrosial.registry;
+package kiwi.ambrosial.registry;
 
-import com.kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.Ambrosial;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.RegistryObject;

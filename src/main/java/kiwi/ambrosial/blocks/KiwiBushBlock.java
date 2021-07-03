@@ -1,9 +1,8 @@
-package com.kiwi.ambrosial.blocks;
+package kiwi.ambrosial.blocks;
 
-import com.kiwi.ambrosial.registry.ModItems;
-import com.kiwi.ambrosial.registry.ModSounds;
+import kiwi.ambrosial.registry.ModItems;
+import kiwi.ambrosial.registry.ModSounds;
 import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.IGrowable;
 import net.minecraft.entity.player.PlayerEntity;
@@ -27,14 +26,14 @@ public class KiwiBushBlock extends GrowableBushBlock implements IGrowable {
     public static final IntegerProperty AGE = BlockStateProperties.AGE_7;
     private static final int KIWI_BEARING_AGE  = 7;
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 12.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 14.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D)};
+            box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 12.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 14.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D)};
 
     public KiwiBushBlock(AbstractBlock.Properties properties) {
         super(properties);

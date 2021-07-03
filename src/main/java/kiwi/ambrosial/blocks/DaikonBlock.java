@@ -1,7 +1,7 @@
-package com.kiwi.ambrosial.blocks;
+package kiwi.ambrosial.blocks;
 
-import com.kiwi.ambrosial.registry.ModBlocks;
-import com.kiwi.ambrosial.registry.ModItems;
+import kiwi.ambrosial.registry.ModBlocks;
+import kiwi.ambrosial.registry.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropsBlock;

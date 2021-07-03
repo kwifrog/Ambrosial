@@ -1,4 +1,4 @@
-package com.kiwi.ambrosial.setup;
+package kiwi.ambrosial.setup;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.common.Mod;

@@ -1,6 +1,6 @@
-package com.kiwi.ambrosial.data;
+package kiwi.ambrosial.data;
 
-import com.kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.Ambrosial;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;

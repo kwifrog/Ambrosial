@@ -1,4 +1,4 @@
-package com.kiwi.ambrosial.utils;
+package kiwi.ambrosial.utils;
 
 import net.minecraft.util.text.IFormattableTextComponent;
 import net.minecraft.util.text.ITextComponent;

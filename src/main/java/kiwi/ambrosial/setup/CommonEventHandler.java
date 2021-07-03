@@ -1,7 +1,7 @@
-package com.kiwi.ambrosial.setup;
+package kiwi.ambrosial.setup;
 
-import com.kiwi.ambrosial.Ambrosial;
-import com.kiwi.ambrosial.registry.ModItems;
+import kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.registry.ModItems;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;

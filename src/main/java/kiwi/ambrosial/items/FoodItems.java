@@ -1,4 +1,4 @@
-package com.kiwi.ambrosial.items;
+package kiwi.ambrosial.items;
 
 import net.minecraft.item.Food;
 

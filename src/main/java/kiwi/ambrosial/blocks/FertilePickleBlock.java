@@ -1,8 +1,8 @@
-package com.kiwi.ambrosial.blocks;
+package kiwi.ambrosial.blocks;
 
-import com.kiwi.ambrosial.registry.ModItems;
-import com.kiwi.ambrosial.registry.ModSounds;
-import com.kiwi.ambrosial.registry.ModTags;
+import kiwi.ambrosial.registry.ModItems;
+import kiwi.ambrosial.registry.ModSounds;
+import kiwi.ambrosial.registry.ModTags;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluid;

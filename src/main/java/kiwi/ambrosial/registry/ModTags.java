@@ -1,6 +1,6 @@
-package com.kiwi.ambrosial.registry;
+package kiwi.ambrosial.registry;
 
-import com.kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.Ambrosial;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.tags.BlockTags;

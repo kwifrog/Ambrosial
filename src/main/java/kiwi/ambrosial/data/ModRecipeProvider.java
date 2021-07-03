@@ -1,7 +1,7 @@
-package com.kiwi.ambrosial.data;
+package kiwi.ambrosial.data;
 
-import com.kiwi.ambrosial.Ambrosial;
-import com.kiwi.ambrosial.registry.ModItems;
+import kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.registry.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
 import net.minecraft.data.RecipeProvider;

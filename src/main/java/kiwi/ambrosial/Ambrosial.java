@@ -1,11 +1,11 @@
-package com.kiwi.ambrosial;
+package kiwi.ambrosial;
 
-import com.kiwi.ambrosial.registry.ModBlocks;
-import com.kiwi.ambrosial.registry.ModItems;
-import com.kiwi.ambrosial.registry.ModSounds;
-import com.kiwi.ambrosial.setup.ClientEventHandler;
-import com.kiwi.ambrosial.setup.CommonEventHandler;
-import com.kiwi.ambrosial.setup.Config;
+import kiwi.ambrosial.registry.ModBlocks;
+import kiwi.ambrosial.registry.ModItems;
+import kiwi.ambrosial.registry.ModSounds;
+import kiwi.ambrosial.setup.ClientEventHandler;
+import kiwi.ambrosial.setup.CommonEventHandler;
+import kiwi.ambrosial.setup.Config;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;

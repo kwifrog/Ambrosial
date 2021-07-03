@@ -1,8 +1,8 @@
-package com.kiwi.ambrosial.setup;
+package kiwi.ambrosial.setup;
 
-import com.kiwi.ambrosial.Ambrosial;
-import com.kiwi.ambrosial.registry.ModBlocks;
-import com.kiwi.ambrosial.utils.TagTooltip;
+import kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.registry.ModBlocks;
+import kiwi.ambrosial.utils.TagTooltip;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;

@@ -1,6 +1,6 @@
-package com.kiwi.ambrosial.utils;
+package kiwi.ambrosial.utils;
 
-import com.kiwi.ambrosial.setup.Config;
+import kiwi.ambrosial.setup.Config;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;

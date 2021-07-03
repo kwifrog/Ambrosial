@@ -1,4 +1,4 @@
-package com.kiwi.ambrosial.data;
+package kiwi.ambrosial.data;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
