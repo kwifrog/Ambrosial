@@ -19,7 +19,8 @@ public class ModRecipeProvider extends RecipeProvider {
         return new ResourceLocation(Ambrosial.MODID, path);
     }
 
-    protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
+    @Override
+    protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
         recipesIngredients(consumer);
         //recipesSmelting(consumer);
         //recipesCooking(consumer);
