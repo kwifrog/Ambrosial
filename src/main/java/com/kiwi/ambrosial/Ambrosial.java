@@ -34,7 +34,6 @@ public class Ambrosial
         ModBlocks.BLOCKS.register(modEventBus);
         ModSounds.SOUNDS.register(modEventBus);
 
-
         MinecraftForge.EVENT_BUS.register(this);
     }
 }
