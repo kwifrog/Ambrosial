@@ -2,26 +2,16 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "ambrosial:kiwi_seeds"
+      "ambrosial:toast_from_smelting"
     ]
   },
   "criteria": {
-    "has_kiwi": {
+    "toast": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "ambrosial:kiwi"
-          }
-        ]
-      }
-    },
-    "has_kiwi_seeds": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "ambrosial:kiwi_seeds"
+            "item": "ambrosial:sliced_bread"
           }
         ]
       }
@@ -29,14 +19,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "ambrosial:kiwi_seeds"
+        "recipe": "ambrosial:toast_from_smelting"
       }
     }
   },
   "requirements": [
     [
-      "has_kiwi",
-      "has_kiwi_seeds",
+      "toast",
       "has_the_recipe"
     ]
   ]

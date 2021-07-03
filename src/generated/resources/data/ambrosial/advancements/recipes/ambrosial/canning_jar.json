@@ -2,26 +2,26 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "ambrosial:kiwi_seeds"
+      "ambrosial:canning_jar"
     ]
   },
   "criteria": {
-    "has_kiwi": {
+    "has_glass": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "ambrosial:kiwi"
+            "item": "minecraft:glass"
           }
         ]
       }
     },
-    "has_kiwi_seeds": {
+    "has_iron_ingot": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "ambrosial:kiwi_seeds"
+            "item": "minecraft:iron_ingot"
           }
         ]
       }
@@ -29,14 +29,14 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "ambrosial:kiwi_seeds"
+        "recipe": "ambrosial:canning_jar"
       }
     }
   },
   "requirements": [
     [
-      "has_kiwi",
-      "has_kiwi_seeds",
+      "has_glass",
+      "has_iron_ingot",
       "has_the_recipe"
     ]
   ]
