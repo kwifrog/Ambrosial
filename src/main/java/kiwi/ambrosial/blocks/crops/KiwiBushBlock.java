@@ -1,4 +1,4 @@
-package kiwi.ambrosial.blocks;
+package kiwi.ambrosial.blocks.crops;
 
 import kiwi.ambrosial.registry.ModItems;
 import kiwi.ambrosial.registry.ModSounds;
@@ -60,7 +60,7 @@ public class KiwiBushBlock extends GrowableBushBlock implements IGrowable {
             int j = 1 + worldIn.random.nextInt(2);
             popResource(worldIn, pos, new ItemStack(ModItems.KIWI.get(), j));
             worldIn.playSound(null, pos, ModSounds.ITEM_KIWI_PICK_FROM_BUSH.get(), SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.random.nextFloat() * 0.4F);
-            worldIn.setBlock(pos, state.setValue(AGE, KIWI_BEARING_AGE -2), 2);
+            worldIn.setBlock(pos, state.setValue(AGE, KIWI_BEARING_AGE -3), 2);
             return ActionResultType.sidedSuccess(worldIn.isClientSide);
         } else {
             return super.use(state, worldIn, pos, player, handIn, hit);

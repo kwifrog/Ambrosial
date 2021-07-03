@@ -1,9 +1,9 @@
 package kiwi.ambrosial.data;
 
 import kiwi.ambrosial.Ambrosial;
-import kiwi.ambrosial.blocks.DaikonBlock;
-import kiwi.ambrosial.blocks.FertilePickleBlock;
-import kiwi.ambrosial.blocks.KiwiBushBlock;
+import kiwi.ambrosial.blocks.crops.DaikonBlock;
+import kiwi.ambrosial.blocks.crops.FertilePickleBlock;
+import kiwi.ambrosial.blocks.crops.KiwiBushBlock;
 import kiwi.ambrosial.registry.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;

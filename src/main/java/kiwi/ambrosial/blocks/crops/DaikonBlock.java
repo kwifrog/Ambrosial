@@ -1,4 +1,4 @@
-package kiwi.ambrosial.blocks;
+package kiwi.ambrosial.blocks.crops;
 
 import kiwi.ambrosial.registry.ModBlocks;
 import kiwi.ambrosial.registry.ModItems;

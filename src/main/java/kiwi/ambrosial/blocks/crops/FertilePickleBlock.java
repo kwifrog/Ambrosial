@@ -1,4 +1,4 @@
-package kiwi.ambrosial.blocks;
+package kiwi.ambrosial.blocks.crops;
 
 import kiwi.ambrosial.registry.ModItems;
 import kiwi.ambrosial.registry.ModSounds;
@@ -154,7 +154,7 @@ public class FertilePickleBlock extends BushBlock implements IGrowable, ILiquidC
             int j = 1 + worldIn.random.nextInt(2);
             popResource(worldIn, pos, new ItemStack(Items.SEA_PICKLE, j));
             worldIn.playSound(null, pos, ModSounds.ITEM_PICKLE_PICK_FROM_BUSH.get(), SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.random.nextFloat() * 0.4F);
-            worldIn.setBlock(pos, state.setValue(AGE, PICKLE_BEARING_AGE -2), 2);
+            worldIn.setBlock(pos, state.setValue(AGE, PICKLE_BEARING_AGE -3), 2);
             return ActionResultType.sidedSuccess(worldIn.isClientSide);
         } else {
             return super.use(state, worldIn, pos, player, handIn, hit);
