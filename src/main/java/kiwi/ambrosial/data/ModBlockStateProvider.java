@@ -2,6 +2,7 @@ package kiwi.ambrosial.data;
 
 import kiwi.ambrosial.Ambrosial;
 import kiwi.ambrosial.blocks.DaikonBlock;
+import kiwi.ambrosial.blocks.FertilePickleBlock;
 import kiwi.ambrosial.blocks.KiwiBushBlock;
 import kiwi.ambrosial.registry.ModBlocks;
 import net.minecraft.block.Block;
@@ -34,7 +35,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         this.stageBlock(ModBlocks.DAIKON_CROP.get(), DaikonBlock.AGE);
         this.stageBlock(ModBlocks.KIWI_CROP.get(), KiwiBushBlock.AGE);
-        //this.stageBlock(ModBlocks.PICKLE_CROP.get(), FertilePickleBlock.AGE);
+        this.stageBlock(ModBlocks.PICKLE_CROP.get(), FertilePickleBlock.AGE);
     }
 
     public void stageBlock(Block block, IntegerProperty ageProperty, Property<?>... ignored) {

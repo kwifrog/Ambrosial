@@ -37,13 +37,15 @@ import java.util.Random;
 @SuppressWarnings("deprecation")
 public class FertilePickleBlock extends BushBlock implements IGrowable, ILiquidContainer {
 
-    public static IntegerProperty AGE = BlockStateProperties.AGE_3;
-    private static final int PICKLE_BEARING_AGE = 3;
+    public static IntegerProperty AGE = BlockStateProperties.AGE_5;
+    private static final int PICKLE_BEARING_AGE = 5;
     public static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[] {
-            Block.box(3.0D, 0.0D, 3.0D, 13.0D, 8.0D, 13.0D),
-            Block.box(3.0D, 0.0D, 3.0D, 13.0D, 10.0D, 13.0D),
-            Block.box(2.0D, 0.0D, 2.0D, 14.0D, 12.0D, 14.0D),
-            Block.box(1.0D, 0.0D, 1.0D, 15.0D, 16.0D, 15.0D)};
+            box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
+            box(0.0D, 0.0D, 0.0D, 16.0D, 12.0D, 16.0D)};
 
     public FertilePickleBlock(Properties properties) {
         super(properties);
@@ -51,7 +53,7 @@ public class FertilePickleBlock extends BushBlock implements IGrowable, ILiquidC
     }
 
     public int getMaxAge() {
-        return 3;
+        return 5;
     }
 
     protected int getAge(BlockState state) {
@@ -102,7 +104,7 @@ public class FertilePickleBlock extends BushBlock implements IGrowable, ILiquidC
 
     @Override
     public boolean isBonemealSuccess(World worldIn, Random rand, BlockPos pos, BlockState state) {
-        return state.getValue(AGE) < 3;
+        return state.getValue(AGE) < 5;
     }
 
     @Override
