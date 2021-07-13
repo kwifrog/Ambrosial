@@ -14,15 +14,9 @@ public class DataGen {
         DataGenerator gen = event.getGenerator();
         ExistingFileHelper helper = event.getExistingFileHelper();
         if (event.includeServer()) {
-            gen.addProvider(new ModRecipeProvider(gen));
-            ModBlockTagProvider blockTags = new ModBlockTagProvider(gen, helper);
-            gen.addProvider(blockTags);
-            gen.addProvider(new ModItemTagProvider(gen, blockTags, helper));
         }
 
         if (event.includeClient()) {
-            gen.addProvider(new ModBlockStateProvider(gen, helper));
-            gen.addProvider(new ModItemModelProvider(gen, helper));
         }
 
     }

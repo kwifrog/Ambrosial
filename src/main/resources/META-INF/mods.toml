@@ -5,15 +5,15 @@ issueTrackerURL="https://github.com/KiwiOfLesbos/Ambrosial/issues"
 
 [[mods]]
 modId="ambrosial"
-version="1.16.5-1.0.0"
+version="1.16.5-0.0.1"
 displayName="Ambrosial"
 displayURL="https://github.com/KiwiOfLesbos/Ambrosial/"
 logoFile="logo.png"
 logoBlur=false
 credits="Thanks to all the snails in my backyard."
 authors="KiwiOfLesbos"
-description="A cozy, aesthetic mod that functions best with Farmer's Delight"
-itemIcon="minecraft:bread"
+description="Bringing ideas and compatibility to the modpack Ambrosial Skies."
+itemIcon="minecraft:obsidian"
 
 [[dependencies.ambrosial]]
     modId="forge"

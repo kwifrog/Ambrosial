@@ -1,2 +1,2 @@
 # Ambrosial
-A cozy, aesthetic mod that works alongside Farmer's Delight.
+Bringing ideas and compatibility to the modpack Ambrosial Skies.
