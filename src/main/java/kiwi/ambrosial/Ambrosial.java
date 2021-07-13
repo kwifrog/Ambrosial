@@ -1,8 +1,6 @@
 package kiwi.ambrosial;
 
-import kiwi.ambrosial.registry.ModBlocks;
-import kiwi.ambrosial.registry.ModItems;
-import kiwi.ambrosial.registry.ModSounds;
+import kiwi.ambrosial.registry.*;
 import kiwi.ambrosial.setup.ClientEventHandler;
 import kiwi.ambrosial.setup.CommonEventHandler;
 import kiwi.ambrosial.setup.Config;
