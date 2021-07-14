@@ -1,6 +1,5 @@
 package kiwi.ambrosial;
 
-import com.minecraftabnormals.abnormals_core.core.util.registry.RegistryHelper;
 import kiwi.ambrosial.setup.ClientEventHandler;
 import kiwi.ambrosial.setup.CommonEventHandler;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,7 +13,6 @@ public class Ambrosial
 {
     public static final String MODID = "ambrosial";
     public static final  AmbrosialItemGroup ITEM_GROUP = new AmbrosialItemGroup(Ambrosial.MODID);
-    public static final RegistryHelper REGISTRY_HELPER = new RegistryHelper(MODID);
 
     public Ambrosial() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
