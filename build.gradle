@@ -83,12 +83,9 @@ dependencies {
 
     minecraft 'net.minecraftforge:forge:1.16.5-36.1.32'
 
-    implementation fg.deobf("curse.maven:abnormals_core-382216:3351059")
-
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
     runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
 
-    runtimeOnly fg.deobf("curse.maven:appleskin-248787:3358019")
     runtimeOnly fg.deobf("curse.maven:the_one_probe-245211:3319255")
     runtimeOnly fg.deobf("curse.maven:jei_integration-265917:3202331")
 

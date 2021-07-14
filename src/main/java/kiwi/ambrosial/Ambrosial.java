@@ -22,8 +22,6 @@ public class Ambrosial
         modEventBus.addListener(ClientEventHandler::init);
         modEventBus.addListener(CommonEventHandler::init);
 
-        REGISTRY_HELPER.register(modEventBus);
-
         //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.COMMON_CONFIG);
         //ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG);
 

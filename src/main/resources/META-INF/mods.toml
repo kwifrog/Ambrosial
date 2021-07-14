@@ -28,10 +28,3 @@ itemIcon="minecraft:obsidian"
     versionRange="[1.16.2,1.17)"
     ordering="NONE"
     side="BOTH"
-
-[[dependencies.ambrosial]]
-    modId="abnormals_core"
-    mandatory=true
-    versionRange="[3.2.0,)"
-    ordering="AFTER"
-    side="BOTH"

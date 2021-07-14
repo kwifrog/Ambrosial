@@ -9,7 +9,6 @@ public class CommonEventHandler {
 
     public static void init (final FMLCommonSetupEvent event) {
 
-
-        }
-
     }
+
+}
