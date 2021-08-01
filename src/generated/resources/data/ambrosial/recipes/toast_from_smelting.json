@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "ambrosial:sliced_bread"
-  },
-  "result": "ambrosial:toast",
-  "experience": 0.35,
-  "cookingtime": 200
-}

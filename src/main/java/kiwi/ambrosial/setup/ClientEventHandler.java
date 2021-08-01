@@ -11,5 +11,4 @@ public class ClientEventHandler {
     public static void init(final FMLClientSetupEvent event) {
 
     }
-
 }
