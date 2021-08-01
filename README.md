@@ -1,2 +1,2 @@
 # Ambrosial
-Bringing ideas and compatibility to the modpack Ambrosial Skies.
+This is gonna be something related to food
