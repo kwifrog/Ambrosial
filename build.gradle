@@ -70,11 +70,15 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
 
+    maven { url = "https://www.cursemaven.com" }
+
 }
 
 dependencies {
 
     minecraft 'net.minecraftforge:forge:1.17.1-37.0.17'
+
+    runtimeOnly fg.deobf("curse.maven:appleskin-248787:3401359")
 }
 
 jar {
