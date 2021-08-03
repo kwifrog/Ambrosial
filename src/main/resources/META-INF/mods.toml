@@ -5,8 +5,9 @@ issueTrackerURL="https://github.com/KiwiOfLesbos/Ambrosial/issues"
 
 [[mods]]
 modId="ambrosial"
-version="1.17.1-0.0.1"
+version="1.17.1-0.1"
 displayName="Ambrosial"
+itemIcon="minecraft:glow_berries"
 credits="Thanks to all the snails in my backyard."
 authors="KiwiOfLesbos"
 description="exceptionally pleasing to taste or smell; especially delicious or fragrant. worthy of the gods; divine."

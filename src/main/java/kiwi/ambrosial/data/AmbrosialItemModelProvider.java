@@ -16,6 +16,10 @@ public class AmbrosialItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         ModelFile itemGenerated = getExistingFile(mcLoc(GENERATED));
+        builder(itemGenerated, "raspberry");
+        builder(itemGenerated, "blueberry");
+        builder(itemGenerated, "blackberry");
+        builder(itemGenerated, "strawberry");
     }
 
     private void builder(ModelFile itemGenerated, String name) {

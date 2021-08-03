@@ -1,5 +1,6 @@
 package kiwi.ambrosial;
 
+import kiwi.ambrosial.registry.AmbrosialItems;
 import kiwi.ambrosial.setup.AmbrosialConfig;
 import kiwi.ambrosial.setup.AmbrosialCreativeTab;
 import kiwi.ambrosial.setup.ClientEventHandler;
@@ -23,6 +24,8 @@ public class Ambrosial {
 
         modEventBus.addListener(ClientEventHandler::init);
         modEventBus.addListener(CommonEventHandler::init);
+
+        AmbrosialItems.ITEMS.register(modEventBus);
 
         //ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, AmbrosialConfig.CLIENT_CONFIG);
         //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AmbrosialConfig.COMMON_CONFIG);
