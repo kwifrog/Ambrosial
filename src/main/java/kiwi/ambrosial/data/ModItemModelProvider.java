@@ -6,10 +6,10 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class AmbrosialItemModelProvider extends ItemModelProvider {
+public class ModItemModelProvider extends ItemModelProvider {
     public static String GENERATED = "item/generated";
 
-    public AmbrosialItemModelProvider(DataGenerator gen, ExistingFileHelper helper) {
+    public ModItemModelProvider(DataGenerator gen, ExistingFileHelper helper) {
         super(gen, Ambrosial.MODID, helper);
     }
 

@@ -8,8 +8,8 @@ import net.minecraft.resources.ResourceLocation;
 
 import java.util.function.Consumer;
 
-public class AmbrosialRecipeProvider extends RecipeProvider {
-    public AmbrosialRecipeProvider(DataGenerator gen) {
+public class ModRecipeProvider extends RecipeProvider {
+    public ModRecipeProvider(DataGenerator gen) {
         super(gen);
     }
 

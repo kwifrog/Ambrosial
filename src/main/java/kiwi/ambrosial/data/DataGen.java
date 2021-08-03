@@ -15,11 +15,11 @@ public class DataGen {
         ExistingFileHelper helper = event.getExistingFileHelper();
 
         if (event.includeServer()) {
-            gen.addProvider(new AmbrosialRecipeProvider(gen));
+            gen.addProvider(new ModRecipeProvider(gen));
         }
 
         if (event.includeClient()) {
-            gen.addProvider(new AmbrosialItemModelProvider(gen, helper));
+            gen.addProvider(new ModItemModelProvider(gen, helper));
         }
     }
 }
