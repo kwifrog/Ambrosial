@@ -20,6 +20,7 @@ public class DataGen {
 
         if (event.includeClient()) {
             gen.addProvider(new ModItemModelProvider(gen, helper));
+            gen.addProvider(new ModLanguageProvider(gen));
         }
     }
 }
