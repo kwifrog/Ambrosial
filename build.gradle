@@ -77,12 +77,13 @@ repositories {
 
 dependencies {
 
-    minecraft 'net.minecraftforge:forge:1.17.1-37.0.17'
+    minecraft 'net.minecraftforge:forge:1.17.1-37.0.22'
 
     runtimeOnly fg.deobf("curse.maven:appleskin-248787:3401359")
     runtimeOnly fg.deobf("curse.maven:jade-324717:3400050")
     runtimeOnly fg.deobf("curse.maven:configured-457570:3397732")
     runtimeOnly fg.deobf("curse.maven:catalogue-459701:3399552")
+
 }
 
 jar {
