@@ -1,5 +1,6 @@
 package kiwi.ambrosial.setup;
 
+import kiwi.ambrosial.registry.AmbrosialItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -13,6 +14,6 @@ public class AmbrosialCreativeTab extends CreativeModeTab {
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(Items.GOLDEN_APPLE);
+        return new ItemStack(AmbrosialItems.BLUEBERRY.get());
     }
 }
