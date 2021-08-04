@@ -19,7 +19,9 @@ public class TagTooltip {
     @SubscribeEvent
     public void onTooltip(ItemTooltipEvent event) {
         if (UtilConfig.tagTooltip.get()&&event.getFlags().isAdvanced()) {
+            for (ResourceLocation tip : event.getItemStack().getItem().getTags())
             event.getToolTip().add(new TextComponent(""));
+            for (ResourceLocation tip : event.getItemStack().getItem().getTags())
             event.getToolTip().add(new TextComponent("Tags:").withStyle(ChatFormatting.DARK_GRAY));
             for (ResourceLocation tip : event.getItemStack().getItem().getTags())
                 event.getToolTip().add(new TextComponent("- " + tip.toString()).withStyle(ChatFormatting.DARK_GRAY));
