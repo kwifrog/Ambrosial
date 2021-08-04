@@ -1,4 +1,4 @@
-package kiwi.ambrosial.setup;
+package kiwi.ambrosial;
 
 import kiwi.ambrosial.registry.AmbrosialItems;
 import net.minecraft.world.item.CreativeModeTab;
