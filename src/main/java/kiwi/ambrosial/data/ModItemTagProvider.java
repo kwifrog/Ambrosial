@@ -59,13 +59,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ForgeTags.RAW_CHICKEN).add(Items.CHICKEN);
         tag(ForgeTags.RAW_PORK).add(Items.PORKCHOP);
         tag(ForgeTags.RAW_MUTTON).add(Items.MUTTON);
-        tag(ForgeTags.RAW_FISH).addTags(
-                ForgeTags.RAW_FISH_COD,
-                ForgeTags.RAW_FISH_SALMON,
-                ForgeTags.RAW_FISH_TROPICAL);
-        tag(ForgeTags.RAW_FISH_COD).add(Items.COD);
-        tag(ForgeTags.RAW_FISH_SALMON).add(Items.SALMON);
-        tag(ForgeTags.RAW_FISH_TROPICAL).add(Items.TROPICAL_FISH);
+        tag(ForgeTags.RAW_FISHES).addTags(
+                ForgeTags.RAW_FISHES_COD,
+                ForgeTags.RAW_FISHES_SALMON,
+                ForgeTags.RAW_FISHES_TROPICAL);
+        tag(ForgeTags.RAW_FISHES_COD).add(Items.COD);
+        tag(ForgeTags.RAW_FISHES_SALMON).add(Items.SALMON);
+        tag(ForgeTags.RAW_FISHES_TROPICAL).add(Items.TROPICAL_FISH);
 
         tag(ForgeTags.CROPS).addTags(
                 ForgeTags.CROPS_RASPBERRY,

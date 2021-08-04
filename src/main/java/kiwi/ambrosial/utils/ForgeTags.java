@@ -37,10 +37,10 @@ public class ForgeTags {
     public static final Tag.Named<Item> RAW_CHICKEN = forgeItemTag("raw_chicken");
     public static final Tag.Named<Item> RAW_PORK = forgeItemTag("raw_pork");
     public static final Tag.Named<Item> RAW_MUTTON = forgeItemTag("raw_mutton");
-    public static final Tag.Named<Item> RAW_FISH = forgeItemTag("raw_fish");
-    public static final Tag.Named<Item> RAW_FISH_COD = forgeItemTag("raw_fish/cod");
-    public static final Tag.Named<Item> RAW_FISH_SALMON = forgeItemTag("raw_fish/salmon");
-    public static final Tag.Named<Item> RAW_FISH_TROPICAL = forgeItemTag("raw_fish/tropical_fish");
+    public static final Tag.Named<Item> RAW_FISHES = forgeItemTag("raw_fishes");
+    public static final Tag.Named<Item> RAW_FISHES_COD = forgeItemTag("raw_fishes/cod");
+    public static final Tag.Named<Item> RAW_FISHES_SALMON = forgeItemTag("raw_fishes/salmon");
+    public static final Tag.Named<Item> RAW_FISHES_TROPICAL = forgeItemTag("raw_fishes/tropical_fish");
 
     public static final Tag.Named<Item> CROPS = forgeItemTag("crops");
     public static final Tag.Named<Item> CROPS_RASPBERRY = forgeItemTag("crops/raspberry");
