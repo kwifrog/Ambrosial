@@ -1,15 +1,13 @@
 package kiwi.ambrosial;
 
+import kiwi.ambrosial.registry.AmbrosialBlocks;
 import kiwi.ambrosial.registry.AmbrosialItems;
-import kiwi.ambrosial.setup.AmbrosialConfig;
-import kiwi.ambrosial.setup.AmbrosialCreativeTab;
+import kiwi.ambrosial.registry.RegistryHandler;
 import kiwi.ambrosial.setup.ClientEventHandler;
 import kiwi.ambrosial.setup.CommonEventHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @SuppressWarnings("unused")
@@ -25,7 +23,7 @@ public class Ambrosial {
         modEventBus.addListener(ClientEventHandler::init);
         modEventBus.addListener(CommonEventHandler::init);
 
-        AmbrosialItems.ITEMS.register(modEventBus);
+        RegistryHandler.register();
 
         //ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, AmbrosialConfig.CLIENT_CONFIG);
         //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AmbrosialConfig.COMMON_CONFIG);

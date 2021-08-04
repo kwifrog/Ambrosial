@@ -19,5 +19,6 @@ public class ModLanguageProvider extends LanguageProvider {
         add(AmbrosialItems.BLUEBERRY.get(), "Blueberries");
         add(AmbrosialItems.BLACKBERRY.get(), "Blackberries");
         add(AmbrosialItems.STRAWBERRY.get(), "Strawberry");
+        add(AmbrosialItems.GRAPE.get(), "Grapes");
     }
 }

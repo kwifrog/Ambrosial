@@ -9,6 +9,7 @@ public class AmbrosialFood {
     public static final FoodProperties BLUEBERRY = (new FoodProperties.Builder().nutrition(3)).saturationMod(0.3F).build();
     public static final FoodProperties BLACKBERRY = (new FoodProperties.Builder().nutrition(3)).saturationMod(0.3F).build();
     public static final FoodProperties STRAWBERRY = (new FoodProperties.Builder().nutrition(3)).saturationMod(0.3F).build();
+    public static final FoodProperties GRAPE = (new FoodProperties.Builder().nutrition(3)).saturationMod(0.3F).build();
 
     /* Veggies */
 

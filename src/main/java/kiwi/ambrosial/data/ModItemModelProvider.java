@@ -20,6 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, "blueberry");
         builder(itemGenerated, "blackberry");
         builder(itemGenerated, "strawberry");
+        builder(itemGenerated, "grape");
     }
 
     private void builder(ModelFile itemGenerated, String name) {
