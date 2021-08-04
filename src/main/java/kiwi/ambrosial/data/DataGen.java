@@ -16,11 +16,14 @@ public class DataGen {
 
         if (event.includeServer()) {
             gen.addProvider(new ModRecipeProvider(gen));
+            ModBlockTagProvider blockTags = new ModBlockTagProvider(gen, helper);
+            gen.addProvider(new ModItemTagProvider(gen, blockTags, helper));
         }
 
         if (event.includeClient()) {
             gen.addProvider(new ModItemModelProvider(gen, helper));
             gen.addProvider(new ModLanguageProvider(gen));
+            gen.addProvider(new ModBlockStateProvider(gen, helper));
         }
     }
 }

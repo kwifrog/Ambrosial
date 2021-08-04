@@ -2,8 +2,8 @@ package kiwi.ambrosial.registry;
 
 import kiwi.ambrosial.items.AmbrosialBlockItem;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.fmllegacy.RegistryObject;
 
 import java.util.function.Supplier;
@@ -12,7 +12,8 @@ import java.util.function.Supplier;
 public class AmbrosialBlocks {
 
     /* Crop Storage */
-    public static final RegistryObject<Block> RASPBERRY_BUSHEL = register("raspberry_bushel", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BARREL)));
+    public static final RegistryObject<Block> RASPBERRY_BUSHEL = register("raspberry_bushel", () ->
+            new Block(Block.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.AZALEA).friction(0.8F)));
 
     public static void register() {
 
@@ -27,5 +28,4 @@ public class AmbrosialBlocks {
         RegistryHandler.ITEMS.register(name, () -> new AmbrosialBlockItem(ret.get()));
         return ret;
     }
-
 }

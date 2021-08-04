@@ -1,9 +1,13 @@
 package kiwi.ambrosial.data;
 
 import kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.items.AmbrosialBlockItem;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.client.model.generators.ModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -15,15 +19,18 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
+        // Generated Models (Regular Items)
         ModelFile itemGenerated = getExistingFile(mcLoc(GENERATED));
-        builder(itemGenerated, "raspberry");
-        builder(itemGenerated, "blueberry");
-        builder(itemGenerated, "blackberry");
-        builder(itemGenerated, "strawberry");
-        builder(itemGenerated, "grape");
+        generatedModel(itemGenerated, "raspberry");
+        generatedModel(itemGenerated, "blueberry");
+        generatedModel(itemGenerated, "blackberry");
+        generatedModel(itemGenerated, "strawberry");
+        generatedModel(itemGenerated, "grape");
+
     }
 
-    private void builder(ModelFile itemGenerated, String name) {
+    private void generatedModel(ModelFile itemGenerated, String name) {
         getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + name);
     }
 }
