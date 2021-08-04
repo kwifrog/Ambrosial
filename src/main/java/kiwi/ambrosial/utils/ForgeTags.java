@@ -13,26 +13,55 @@ import net.minecraft.world.item.Item;
 
 public class ForgeTags {
 
-    /* Crops */
-    public static final Tag.Named<Item> CROPS = forgeTagItem("crops");
-    public static final Tag.Named<Item> CROPS_RASPBERRY = forgeTagItem("crops/raspberry");
-    public static final Tag.Named<Item> CROPS_BLUEBERRY = forgeTagItem("crops/blueberry");
-    public static final Tag.Named<Item> CROPS_BLACKBERRY = forgeTagItem("crops/blackberry");
-    public static final Tag.Named<Item> CROPS_STRAWBERRY = forgeTagItem("crops/strawberry");
-    public static final Tag.Named<Item> CROPS_GRAPES = forgeTagItem("crops/grape");
+    public static final Tag.Named<Item> BREAD = forgeItemTag("bread");
+    public static final Tag.Named<Item> BREAD_WHEAT = forgeItemTag("bread/wheat");
+    
+    public static final Tag.Named<Item> COOKED_BEEF = forgeItemTag("cooked_beef");
+    public static final Tag.Named<Item> COOKED_CHICKEN = forgeItemTag("cooked_chicken");
+    public static final Tag.Named<Item> COOKED_PORK = forgeItemTag("cooked_pork");
+    public static final Tag.Named<Item> COOKED_MUTTON = forgeItemTag("cooked_mutton");
+    //public static final Tag.Named<Item> COOKED_EGGS = forgeItemTag("cooked_eggs");
+    public static final Tag.Named<Item> COOKED_FISH = forgeItemTag("cooked_fish");
+    public static final Tag.Named<Item> COOKED_FISH_COD = forgeItemTag("cooked_fish/cod");
+    public static final Tag.Named<Item> COOKED_FISH_SALMON = forgeItemTag("cooked_fish/salmon");
 
-    /* Fruit */
-    public static final Tag.Named<Item> FRUITS = forgeTagItem("fruits");
-    public static final Tag.Named<Item> FRUITS_RASPBERRY = forgeTagItem("fruits/raspberry");
-    public static final Tag.Named<Item> FRUITS_BLUEBERRY = forgeTagItem("fruits/blueberry");
-    public static final Tag.Named<Item> FRUITS_BLACKBERRY = forgeTagItem("fruits/blackberry");
-    public static final Tag.Named<Item> FRUITS_STRAWBERRY = forgeTagItem("fruits/strawberry");
-    public static final Tag.Named<Item> FRUITS_GRAPES = forgeTagItem("fruits/grape");
+    public static final Tag.Named<Item> EGGS = forgeItemTag("eggs");
 
-    /* Veggies */
+    public static final Tag.Named<Item> GRAIN = forgeItemTag("grain");
+    public static final Tag.Named<Item> GRAIN_WHEAT = forgeItemTag("grain/wheat");
 
+    public static final Tag.Named<Item> MILK = forgeItemTag("milk");
+    public static final Tag.Named<Item> MILK_BUCKET = forgeItemTag("milk/milk");
 
-    private  static Tag.Named<Item> forgeTagItem(String path) {
+    public static final Tag.Named<Item> RAW_BEEF = forgeItemTag("raw_beef");
+    public static final Tag.Named<Item> RAW_CHICKEN = forgeItemTag("raw_chicken");
+    public static final Tag.Named<Item> RAW_PORK = forgeItemTag("raw_pork");
+    public static final Tag.Named<Item> RAW_MUTTON = forgeItemTag("raw_mutton");
+    public static final Tag.Named<Item> RAW_FISH = forgeItemTag("raw_fish");
+    public static final Tag.Named<Item> RAW_FISH_COD = forgeItemTag("raw_fish/cod");
+    public static final Tag.Named<Item> RAW_FISH_SALMON = forgeItemTag("raw_fish/salmon");
+    public static final Tag.Named<Item> RAW_FISH_TROPICAL = forgeItemTag("raw_fish/tropical_fish");
+
+    public static final Tag.Named<Item> CROPS = forgeItemTag("crops");
+    public static final Tag.Named<Item> CROPS_RASPBERRY = forgeItemTag("crops/raspberry");
+    public static final Tag.Named<Item> CROPS_BLUEBERRY = forgeItemTag("crops/blueberry");
+    public static final Tag.Named<Item> CROPS_BLACKBERRY = forgeItemTag("crops/blackberry");
+    public static final Tag.Named<Item> CROPS_STRAWBERRY = forgeItemTag("crops/strawberry");
+    public static final Tag.Named<Item> CROPS_GRAPES = forgeItemTag("crops/grape");
+
+    public static final Tag.Named<Item> FRUITS = forgeItemTag("fruits");
+    public static final Tag.Named<Item> FRUITS_RASPBERRY = forgeItemTag("fruits/raspberry");
+    public static final Tag.Named<Item> FRUITS_BLUEBERRY = forgeItemTag("fruits/blueberry");
+    public static final Tag.Named<Item> FRUITS_BLACKBERRY = forgeItemTag("fruits/blackberry");
+    public static final Tag.Named<Item> FRUITS_STRAWBERRY = forgeItemTag("fruits/strawberry");
+    public static final Tag.Named<Item> FRUITS_GRAPES = forgeItemTag("fruits/grape");
+
+    public static final Tag.Named<Item> VEGETABLES = forgeItemTag("vegetables");
+    public static final Tag.Named<Item> VEGETABLES_BEETROOT = forgeItemTag("vegetables/beetroot");
+    public static final Tag.Named<Item> VEGETABLES_CARROT = forgeItemTag("vegetables/carrot");
+    public static final Tag.Named<Item> VEGETABLES_POTATO = forgeItemTag("vegetables/potato");
+
+    private  static Tag.Named<Item> forgeItemTag(String path) {
         return ItemTags.bind(new ResourceLocation("forge", path).toString());
     }
 
