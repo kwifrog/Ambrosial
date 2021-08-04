@@ -1,13 +1,9 @@
 package kiwi.ambrosial.data;
 
 import kiwi.ambrosial.Ambrosial;
-import kiwi.ambrosial.items.AmbrosialBlockItem;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
-import net.minecraftforge.client.model.generators.ModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -27,6 +23,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         generatedModel(itemGenerated, "blackberry");
         generatedModel(itemGenerated, "strawberry");
         generatedModel(itemGenerated, "grape");
+        generatedModel(itemGenerated, "onion");
+        generatedModel(itemGenerated, "tomato");
+        generatedModel(itemGenerated, "radish");
+        generatedModel(itemGenerated, "cabbage");
 
     }
 

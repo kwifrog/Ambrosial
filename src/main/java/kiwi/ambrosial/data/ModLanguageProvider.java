@@ -1,6 +1,7 @@
 package kiwi.ambrosial.data;
 
 import kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.registry.AmbrosialBlocks;
 import kiwi.ambrosial.registry.AmbrosialItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
@@ -20,5 +21,11 @@ public class ModLanguageProvider extends LanguageProvider {
         add(AmbrosialItems.BLACKBERRY.get(), "Blackberries");
         add(AmbrosialItems.STRAWBERRY.get(), "Strawberry");
         add(AmbrosialItems.GRAPE.get(), "Grapes");
+        add(AmbrosialItems.ONION.get(), "Onion");
+        add(AmbrosialItems.TOMATO.get(), "Tomato");
+        add(AmbrosialItems.RADISH.get(), "Radish");
+        add(AmbrosialItems.CABBAGE.get(), "Cabbage");
+
+        add(AmbrosialBlocks.RASPBERRY_BUSHEL.get(), "Raspberry Bushel");
     }
 }

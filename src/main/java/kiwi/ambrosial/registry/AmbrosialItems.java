@@ -18,6 +18,10 @@ public class AmbrosialItems {
     public static final RegistryObject<Item> GRAPE = RegistryHandler.ITEMS.register("grape", () -> new Item(new Item.Properties().food(AmbrosialFood.GRAPE).tab(Ambrosial.CREATIVE_TAB)));
 
     /* Veggies */
+    public static final RegistryObject<Item> ONION = RegistryHandler.ITEMS.register("onion", () -> new Item(new Item.Properties().food(AmbrosialFood.ONION).tab(Ambrosial.CREATIVE_TAB)));
+    public static final RegistryObject<Item> TOMATO = RegistryHandler.ITEMS.register("tomato", () -> new Item(new Item.Properties().food(AmbrosialFood.TOMATO).tab(Ambrosial.CREATIVE_TAB)));
+    public static final RegistryObject<Item> RADISH = RegistryHandler.ITEMS.register("radish", () -> new Item(new Item.Properties().food(AmbrosialFood.RADISH).tab(Ambrosial.CREATIVE_TAB)));
+    public static final RegistryObject<Item> CABBAGE = RegistryHandler.ITEMS.register("cabbage", () -> new Item(new Item.Properties().food(AmbrosialFood.CABBAGE).tab(Ambrosial.CREATIVE_TAB)));
 
 
     /* Herbs */

@@ -12,6 +12,10 @@ public class AmbrosialFood {
     public static final FoodProperties GRAPE = (new FoodProperties.Builder().nutrition(3)).saturationMod(0.3F).build();
 
     /* Veggies */
+    public static final FoodProperties ONION = (new FoodProperties.Builder().nutrition(2)).saturationMod(0.3F).build();
+    public static final FoodProperties TOMATO = (new FoodProperties.Builder().nutrition(2)).saturationMod(0.3F).build();
+    public static final FoodProperties RADISH = (new FoodProperties.Builder().nutrition(2)).saturationMod(0.3F).build();
+    public static final FoodProperties CABBAGE = (new FoodProperties.Builder().nutrition(2)).saturationMod(0.3F).build();
 
 
     /* Herbs */
