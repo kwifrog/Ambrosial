@@ -1,6 +1,7 @@
 package kiwi.ambrosial.setup;
 
 import kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.utils.TagTooltip;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -9,6 +10,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class ClientEventHandler {
 
     public static void init(final FMLClientSetupEvent event) {
-
+        TagTooltip.init();
     }
 }
