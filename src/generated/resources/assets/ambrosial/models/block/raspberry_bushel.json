@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "side": "ambrosial:block/raspberry_bushel_side",
-    "bottom": "ambrosial:block/bushel_bottom",
-    "top": "ambrosial:block/raspberry_bushel_top"
-  }
-}

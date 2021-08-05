@@ -14,7 +14,7 @@ public class RegistryHandler {
 
     public  static  void register() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        //BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         AmbrosialItems.register();
         AmbrosialBlocks.register();

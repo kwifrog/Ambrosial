@@ -21,11 +21,13 @@ public class ModLanguageProvider extends LanguageProvider {
         add(AmbrosialItems.BLACKBERRY.get(), "Blackberries");
         add(AmbrosialItems.STRAWBERRY.get(), "Strawberry");
         add(AmbrosialItems.GRAPE.get(), "Grapes");
+        add(AmbrosialItems.KIWI.get(), "Kiwi");
+        add(AmbrosialItems.PINEAPPLE.get(), "Pineapple");
         add(AmbrosialItems.ONION.get(), "Onion");
         add(AmbrosialItems.TOMATO.get(), "Tomato");
         add(AmbrosialItems.RADISH.get(), "Radish");
         add(AmbrosialItems.CABBAGE.get(), "Cabbage");
 
-        add(AmbrosialBlocks.RASPBERRY_BUSHEL.get(), "Raspberry Bushel");
+        //add(AmbrosialBlocks.RASPBERRY_BUSHEL.get(), "Raspberry Bushel");
     }
 }

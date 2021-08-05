@@ -12,8 +12,8 @@ import java.util.function.Supplier;
 public class AmbrosialBlocks {
 
     /* Crop Storage */
-    public static final RegistryObject<Block> RASPBERRY_BUSHEL = register("raspberry_bushel", () ->
-            new Block(Block.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.AZALEA).friction(0.8F)));
+   /* public static final RegistryObject<Block> RASPBERRY_BUSHEL = register("raspberry_bushel", () ->
+            new Block(Block.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.AZALEA).friction(0.8F)));*/
 
     public static void register() {
 

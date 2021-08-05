@@ -5,6 +5,12 @@
     "#forge:crops/blueberry",
     "#forge:crops/blackberry",
     "#forge:crops/strawberry",
-    "#forge:crops/grape"
+    "#forge:crops/grape",
+    "#forge:crops/kiwi",
+    "#forge:crops/pineapple",
+    "#forge:crops/onion",
+    "#forge:crops/tomato",
+    "#forge:crops/cabbage",
+    "#forge:crops/radish"
   ]
 }

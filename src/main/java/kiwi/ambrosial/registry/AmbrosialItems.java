@@ -11,11 +11,13 @@ public class AmbrosialItems {
 
 
     /* Fruits */
-    public static final RegistryObject<Item> RASPBERRY = RegistryHandler.ITEMS.register("raspberry", () -> new Item(new Item.Properties().food(AmbrosialFood.RASPBERRY).tab(Ambrosial.CREATIVE_TAB)));
-    public static final RegistryObject<Item> BLUEBERRY = RegistryHandler.ITEMS.register("blueberry", () -> new Item(new Item.Properties().food(AmbrosialFood.BLUEBERRY).tab(Ambrosial.CREATIVE_TAB)));
-    public static final RegistryObject<Item> BLACKBERRY = RegistryHandler.ITEMS.register("blackberry", () -> new Item(new Item.Properties().food(AmbrosialFood.BLACKBERRY).tab(Ambrosial.CREATIVE_TAB)));
-    public static final RegistryObject<Item> STRAWBERRY = RegistryHandler.ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(AmbrosialFood.STRAWBERRY).tab(Ambrosial.CREATIVE_TAB)));
+    public static final RegistryObject<Item> RASPBERRY = RegistryHandler.ITEMS.register("raspberry", () -> new Item(new Item.Properties().food(AmbrosialFood.BERRY).tab(Ambrosial.CREATIVE_TAB)));
+    public static final RegistryObject<Item> BLUEBERRY = RegistryHandler.ITEMS.register("blueberry", () -> new Item(new Item.Properties().food(AmbrosialFood.BERRY).tab(Ambrosial.CREATIVE_TAB)));
+    public static final RegistryObject<Item> BLACKBERRY = RegistryHandler.ITEMS.register("blackberry", () -> new Item(new Item.Properties().food(AmbrosialFood.BERRY).tab(Ambrosial.CREATIVE_TAB)));
+    public static final RegistryObject<Item> STRAWBERRY = RegistryHandler.ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(AmbrosialFood.BERRY).tab(Ambrosial.CREATIVE_TAB)));
     public static final RegistryObject<Item> GRAPE = RegistryHandler.ITEMS.register("grape", () -> new Item(new Item.Properties().food(AmbrosialFood.GRAPE).tab(Ambrosial.CREATIVE_TAB)));
+    public static final RegistryObject<Item> KIWI = RegistryHandler.ITEMS.register("kiwi", () -> new Item(new Item.Properties().food(AmbrosialFood.KIWI).tab(Ambrosial.CREATIVE_TAB)));
+    public static final RegistryObject<Item> PINEAPPLE = RegistryHandler.ITEMS.register("pineapple", () -> new Item(new Item.Properties().food(AmbrosialFood.PINEAPPLE).tab(Ambrosial.CREATIVE_TAB)));
 
     /* Veggies */
     public static final RegistryObject<Item> ONION = RegistryHandler.ITEMS.register("onion", () -> new Item(new Item.Properties().food(AmbrosialFood.ONION).tab(Ambrosial.CREATIVE_TAB)));

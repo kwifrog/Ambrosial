@@ -5,6 +5,8 @@
     "#forge:fruits/blueberry",
     "#forge:fruits/blackberry",
     "#forge:fruits/strawberry",
-    "#forge:fruits/grape"
+    "#forge:fruits/grape",
+    "#forge:fruits/kiwi",
+    "#forge:fruits/pineapple"
   ]
 }

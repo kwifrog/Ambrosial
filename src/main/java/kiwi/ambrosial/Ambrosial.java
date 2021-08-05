@@ -1,8 +1,6 @@
 package kiwi.ambrosial;
 
-import kiwi.ambrosial.config.AmbrosialClientConfig;
-import kiwi.ambrosial.registry.AmbrosialBlocks;
-import kiwi.ambrosial.registry.AmbrosialItems;
+import kiwi.ambrosial.config.AmbrosialConfig;
 import kiwi.ambrosial.registry.RegistryHandler;
 import kiwi.ambrosial.setup.ClientEventHandler;
 import kiwi.ambrosial.setup.CommonEventHandler;
@@ -29,8 +27,11 @@ public class Ambrosial {
 
         RegistryHandler.register();
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, AmbrosialClientConfig.CLIENT_CONFIG, "ambrosial-client.toml");
-        AmbrosialClientConfig.loadConfig(AmbrosialClientConfig.CLIENT_CONFIG, FMLPaths.CONFIGDIR.get().resolve("ambrosial-client.toml").toString());
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, AmbrosialConfig.CLIENT_CONFIG, "ambrosial-client.toml");
+        AmbrosialConfig.loadConfig(AmbrosialConfig.CLIENT_CONFIG, FMLPaths.CONFIGDIR.get().resolve("ambrosial-client.toml").toString());
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AmbrosialConfig.COMMON_CONFIG, "ambrosial-server.toml");
+        AmbrosialConfig.loadConfig(AmbrosialConfig.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("ambrosial-server.toml").toString());
 
         MinecraftForge.EVENT_BUS.register(this);
     }

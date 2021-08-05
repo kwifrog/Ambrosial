@@ -23,6 +23,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         generatedModel(itemGenerated, "blackberry");
         generatedModel(itemGenerated, "strawberry");
         generatedModel(itemGenerated, "grape");
+        generatedModel(itemGenerated, "kiwi");
+        generatedModel(itemGenerated, "pineapple");
         generatedModel(itemGenerated, "onion");
         generatedModel(itemGenerated, "tomato");
         generatedModel(itemGenerated, "radish");

@@ -72,31 +72,55 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 ForgeTags.CROPS_BLUEBERRY,
                 ForgeTags.CROPS_BLACKBERRY,
                 ForgeTags.CROPS_STRAWBERRY,
-                ForgeTags.CROPS_GRAPES);
+                ForgeTags.CROPS_GRAPES,
+                ForgeTags.CROPS_KIWI,
+                ForgeTags.CROPS_PINEAPPLE,
+                ForgeTags.CROPS_ONION,
+                ForgeTags.CROPS_TOMATO,
+                ForgeTags.CROPS_CABBAGE,
+                ForgeTags.CROPS_RADISH);
         tag(ForgeTags.CROPS_RASPBERRY).add(AmbrosialItems.RASPBERRY.get());
         tag(ForgeTags.CROPS_BLUEBERRY).add(AmbrosialItems.BLUEBERRY.get());
         tag(ForgeTags.CROPS_BLACKBERRY).add(AmbrosialItems.BLACKBERRY.get());
         tag(ForgeTags.CROPS_STRAWBERRY).add(AmbrosialItems.STRAWBERRY.get());
         tag(ForgeTags.CROPS_GRAPES).add(AmbrosialItems.GRAPE.get());
+        tag(ForgeTags.CROPS_KIWI).add(AmbrosialItems.KIWI.get());
+        tag(ForgeTags.CROPS_PINEAPPLE).add(AmbrosialItems.PINEAPPLE.get());
+        tag(ForgeTags.CROPS_ONION).add(AmbrosialItems.ONION.get());
+        tag(ForgeTags.CROPS_TOMATO).add(AmbrosialItems.TOMATO.get());
+        tag(ForgeTags.CROPS_CABBAGE).add(AmbrosialItems.CABBAGE.get());
+        tag(ForgeTags.CROPS_RADISH).add(AmbrosialItems.RADISH.get());
 
         tag(ForgeTags.FRUITS).addTags(
                 ForgeTags.FRUITS_RASPBERRY,
                 ForgeTags.FRUITS_BLUEBERRY,
                 ForgeTags.FRUITS_BLACKBERRY,
                 ForgeTags.FRUITS_STRAWBERRY,
-                ForgeTags.FRUITS_GRAPES);
+                ForgeTags.FRUITS_GRAPES,
+                ForgeTags.FRUITS_KIWI,
+                ForgeTags.FRUITS_PINEAPPLE);
         tag(ForgeTags.FRUITS_RASPBERRY).add(AmbrosialItems.RASPBERRY.get());
         tag(ForgeTags.FRUITS_BLUEBERRY).add(AmbrosialItems.BLUEBERRY.get());
         tag(ForgeTags.FRUITS_BLACKBERRY).add(AmbrosialItems.BLACKBERRY.get());
         tag(ForgeTags.FRUITS_STRAWBERRY).add(AmbrosialItems.STRAWBERRY.get());
         tag(ForgeTags.FRUITS_GRAPES).add(AmbrosialItems.GRAPE.get());
+        tag(ForgeTags.FRUITS_KIWI).add(AmbrosialItems.KIWI.get());
+        tag(ForgeTags.FRUITS_PINEAPPLE).add(AmbrosialItems.PINEAPPLE.get());
 
         tag(ForgeTags.VEGETABLES).addTags(
                 ForgeTags.VEGETABLES_BEETROOT,
                 ForgeTags.VEGETABLES_CARROT,
-                ForgeTags.VEGETABLES_POTATO);
+                ForgeTags.VEGETABLES_POTATO,
+                ForgeTags.VEGETABLES_ONION,
+                ForgeTags.VEGETABLES_TOMATO,
+                ForgeTags.VEGETABLES_CABBAGE,
+                ForgeTags.VEGETABLES_RADISH);
         tag(ForgeTags.VEGETABLES_BEETROOT).add(Items.BEETROOT);
         tag(ForgeTags.VEGETABLES_CARROT).add(Items.CARROT);
         tag(ForgeTags.VEGETABLES_POTATO).add(Items.POTATO);
+        tag(ForgeTags.VEGETABLES_ONION).add(AmbrosialItems.ONION.get());
+        tag(ForgeTags.VEGETABLES_TOMATO).add(AmbrosialItems.TOMATO.get());
+        tag(ForgeTags.VEGETABLES_CABBAGE).add(AmbrosialItems.CABBAGE.get());
+        tag(ForgeTags.VEGETABLES_RADISH).add(AmbrosialItems.RADISH.get());
     }
 }

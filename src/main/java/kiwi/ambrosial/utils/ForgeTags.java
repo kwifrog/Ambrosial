@@ -48,6 +48,12 @@ public class ForgeTags {
     public static final Tag.Named<Item> CROPS_BLACKBERRY = forgeItemTag("crops/blackberry");
     public static final Tag.Named<Item> CROPS_STRAWBERRY = forgeItemTag("crops/strawberry");
     public static final Tag.Named<Item> CROPS_GRAPES = forgeItemTag("crops/grape");
+    public static final Tag.Named<Item> CROPS_KIWI = forgeItemTag("crops/kiwi");
+    public static final Tag.Named<Item> CROPS_PINEAPPLE = forgeItemTag("crops/pineapple");
+    public static final Tag.Named<Item> CROPS_ONION = forgeItemTag("crops/onion");
+    public static final Tag.Named<Item> CROPS_TOMATO = forgeItemTag("crops/tomato");
+    public static final Tag.Named<Item> CROPS_CABBAGE = forgeItemTag("crops/cabbage");
+    public static final Tag.Named<Item> CROPS_RADISH = forgeItemTag("crops/radish");
 
     public static final Tag.Named<Item> FRUITS = forgeItemTag("fruits");
     public static final Tag.Named<Item> FRUITS_RASPBERRY = forgeItemTag("fruits/raspberry");
@@ -55,11 +61,17 @@ public class ForgeTags {
     public static final Tag.Named<Item> FRUITS_BLACKBERRY = forgeItemTag("fruits/blackberry");
     public static final Tag.Named<Item> FRUITS_STRAWBERRY = forgeItemTag("fruits/strawberry");
     public static final Tag.Named<Item> FRUITS_GRAPES = forgeItemTag("fruits/grape");
+    public static final Tag.Named<Item> FRUITS_KIWI = forgeItemTag("fruits/kiwi");
+    public static final Tag.Named<Item> FRUITS_PINEAPPLE = forgeItemTag("fruits/pineapple");
 
     public static final Tag.Named<Item> VEGETABLES = forgeItemTag("vegetables");
     public static final Tag.Named<Item> VEGETABLES_BEETROOT = forgeItemTag("vegetables/beetroot");
     public static final Tag.Named<Item> VEGETABLES_CARROT = forgeItemTag("vegetables/carrot");
     public static final Tag.Named<Item> VEGETABLES_POTATO = forgeItemTag("vegetables/potato");
+    public static final Tag.Named<Item> VEGETABLES_ONION = forgeItemTag("vegetables/onion");
+    public static final Tag.Named<Item> VEGETABLES_TOMATO = forgeItemTag("vegetables/tomato");
+    public static final Tag.Named<Item> VEGETABLES_CABBAGE = forgeItemTag("vegetables/cabbage");
+    public static final Tag.Named<Item> VEGETABLES_RADISH = forgeItemTag("vegetables/radish");
 
     private  static Tag.Named<Item> forgeItemTag(String path) {
         return ItemTags.bind(new ResourceLocation("forge", path).toString());
