@@ -28,6 +28,12 @@ public class ModLanguageProvider extends LanguageProvider {
         add(AmbrosialItems.RADISH.get(), "Radish");
         add(AmbrosialItems.CABBAGE.get(), "Cabbage");
 
+        add(AmbrosialItems.RADISH_SEED.get(), "Radish Seeds");
+        add(AmbrosialItems.KIWI_SEED.get(), "Kiwi Seeds");
+
+        //add(AmbrosialBlocks.RADISH_CROP.get(), "Radishes");
+        //add(AmbrosialBlocks.KIWI_CROP.get(), "Kiwis");
+
         //add(AmbrosialBlocks.RASPBERRY_BUSHEL.get(), "Raspberry Bushel");
     }
 }

@@ -1,0 +1,16 @@
+{
+  "item.kiwi.pick_from_bush": {
+    "category": "block",
+    "subtitle": "ambrosial.subtitles.kiwi.pick",
+    "sounds": [
+      {
+        "name": "item/sweet_berries/pick_from_bush1",
+        "stream": true
+      },
+      {
+        "name": "item/sweet_berries/pick_from_bush2",
+        "stream": true
+      }
+    ]
+  }
+}

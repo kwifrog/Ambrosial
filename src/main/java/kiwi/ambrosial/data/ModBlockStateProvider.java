@@ -1,13 +1,18 @@
 package kiwi.ambrosial.data;
 
 import kiwi.ambrosial.Ambrosial;
+import kiwi.ambrosial.blocks.crops.BaseCropBlock;
+import kiwi.ambrosial.blocks.crops.KiwiBushBlock;
 import kiwi.ambrosial.registry.AmbrosialBlocks;
-import kiwi.ambrosial.registry.RegistryHandler;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelProvider;
+import net.minecraftforge.client.model.generators.VariantBlockStateBuilder;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import java.util.Objects;
@@ -29,10 +34,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 
+        /* Crops */
+        stageBlock(AmbrosialBlocks.RADISH_CROP.get(), BaseCropBlock.AGE);
+        stageBlock(AmbrosialBlocks.KIWI_CROP.get(), KiwiBushBlock.AGE);
+
         /* Bushels */
         //bushelBlock(AmbrosialBlocks.RASPBERRY_BUSHEL.get(), "raspberry");
-
-        RegistryHandler.BLOCKS.getEntries().forEach((block) -> blockItems(block.get()));
     }
 
     private void blocks(Block block) {
@@ -49,5 +56,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockItems(Block block) {
         String path = block.getRegistryName().getPath();
         simpleBlockItem(block, models().getExistingFile(modLoc(ModelProvider.BLOCK_FOLDER + "/" + path)));
+    }
+
+    private void stageBlock(Block block, IntegerProperty ageProperty, Property<?>... ignored) {
+        VariantBlockStateBuilder builder = getVariantBuilder(block)
+                .forAllStatesExcept(blockState -> {
+                    int ageSuffix = blockState.getValue(ageProperty);
+                    String stageName = blockName(block) + "_stage" + ageSuffix;
+                    return ConfiguredModel.builder().modelFile(models().crop(stageName, resourceBlock(stageName))).build();
+                }, ignored);
     }
 }

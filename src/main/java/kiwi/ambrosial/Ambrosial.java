@@ -30,8 +30,8 @@ public class Ambrosial {
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, AmbrosialConfig.CLIENT_CONFIG, "ambrosial-client.toml");
         AmbrosialConfig.loadConfig(AmbrosialConfig.CLIENT_CONFIG, FMLPaths.CONFIGDIR.get().resolve("ambrosial-client.toml").toString());
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AmbrosialConfig.COMMON_CONFIG, "ambrosial-server.toml");
-        AmbrosialConfig.loadConfig(AmbrosialConfig.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("ambrosial-server.toml").toString());
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AmbrosialConfig.COMMON_CONFIG, "ambrosial-common.toml");
+        AmbrosialConfig.loadConfig(AmbrosialConfig.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("ambrosial-common.toml").toString());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
