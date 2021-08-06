@@ -1,7 +1,7 @@
 package kiwi.ambrosial.setup;
 
 import kiwi.ambrosial.Ambrosial;
-import net.minecraft.world.level.block.ComposterBlock;
+import kiwi.ambrosial.events.EventsHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
@@ -9,12 +9,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 public class CommonEventHandler {
 
     public static void init(final FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {
-
-        });
+            EventsHandler.setupEvents();
+            Compostables.register();
     }
-
-    /* public static void registerCompostables() {
-        ComposterBlock.COMPOSTABLES.put();
-    } */
 }
