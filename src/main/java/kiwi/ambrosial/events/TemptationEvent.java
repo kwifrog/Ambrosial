@@ -1,6 +1,6 @@
 package kiwi.ambrosial.events;
 
-import kiwi.ambrosial.entity.ai.ExtraTemptation;
+import kiwi.ambrosial.entity.ai.TemptationTask;
 import kiwi.ambrosial.registry.AmbrosialItems;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
@@ -11,7 +11,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
-public class TemptationTask {
+public class TemptationEvent {
     private static final Ingredient SEEDS = Ingredient.of(AmbrosialItems.KIWI_SEED.get(), AmbrosialItems.RADISH_SEED.get());
     private static final Ingredient OINK = Ingredient.of(AmbrosialItems.RADISH.get());
 
@@ -21,13 +21,13 @@ public class TemptationTask {
 
         if (entity instanceof Chicken chicken) {
             if ((chicken.getNavigation() instanceof GroundPathNavigation) || (chicken.getNavigation() instanceof FlyingPathNavigation)) {
-                chicken.goalSelector.addGoal(3, new ExtraTemptation(chicken, 1.0D, SEEDS, false));
+                chicken.goalSelector.addGoal(3, new TemptationTask(chicken, 1.0D, SEEDS, false));
             }
         }
 
         if (entity instanceof Pig pig) {
             if ((pig.getNavigation() instanceof  GroundPathNavigation) || (pig.getNavigation() instanceof FlyingPathNavigation)) {
-                pig.goalSelector.addGoal(4, new ExtraTemptation(pig, 1.2D, OINK, false));
+                pig.goalSelector.addGoal(4, new TemptationTask(pig, 1.2D, OINK, false));
             }
         }
     }

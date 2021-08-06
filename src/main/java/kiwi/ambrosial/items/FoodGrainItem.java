@@ -1,26 +1,20 @@
 package kiwi.ambrosial.items;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.animal.Chicken;
-import net.minecraft.world.entity.animal.Parrot;
+import net.minecraft.world.entity.animal.Cow;
+import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockState;
 
-public class SeedItem extends ItemNameBlockItem {
-    public SeedItem(Block block, Properties properties) {
-        super(block, properties);
+public class FoodGrainItem extends Item {
+    public FoodGrainItem(Properties properties) {
+        super(properties);
     }
 
     @Override
@@ -34,29 +28,27 @@ public class SeedItem extends ItemNameBlockItem {
     public InteractionResult interactLivingEntity(ItemStack items, Player player, LivingEntity mob, InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
         if (!mob.isAddedToWorld() && !mob.isBaby() && mob instanceof AgeableMob && ((AgeableMob) mob).getAge() == 0) {
-            if (mob instanceof Chicken) {
-                if (((Chicken) mob).isInLove()) {
+            if (mob instanceof Cow) {
+                if (((Cow) mob).isInLove()) {
                     return InteractionResult.FAIL;
                 } else {
-                    ((Chicken) mob).setInLove(player);
+                    ((Cow) mob).setInLove(player);
                     if (!player.isCreative())
                         stack.shrink(1);
                     return InteractionResult.PASS;
                 }
             }
-
-            if (mob instanceof Parrot)
-                if (!mob.isAddedToWorld()) {
-                    if (!((Parrot) mob).isTame())
-                        if (Math.random() <= 0.33) {
-                            ((Parrot) mob).tame(player);
-                            ((Parrot) mob).setInLove(player);
-                        }
+            if (mob instanceof Sheep) {
+                if (((Sheep) mob).isInLove()) {
+                    return InteractionResult.FAIL;
+                } else {
+                    ((Sheep) mob).setInLove(player);
                     if (!player.isCreative())
                         stack.shrink(1);
+                    return InteractionResult.PASS;
                 }
+            }
         }
-
         if (mob.isBaby()) {
             if (!player.isCreative())
                 stack.shrink(1);
@@ -65,16 +57,4 @@ public class SeedItem extends ItemNameBlockItem {
         }
         return InteractionResult.FAIL;
     }
-
-    @Override
-    public InteractionResult useOn(UseOnContext context) {
-        BlockPos hitPos = context.getClickedPos();
-        Level world = context.getLevel();
-        BlockState state = world.getBlockState(hitPos);
-        if (state.is(Blocks.FARMLAND)) {
-            return super.useOn(context);
-        }
-        return InteractionResult.FAIL;
-    }
-
-}
+}    

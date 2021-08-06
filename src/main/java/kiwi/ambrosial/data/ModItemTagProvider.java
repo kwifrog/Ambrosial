@@ -122,5 +122,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ForgeTags.VEGETABLES_TOMATO).add(AmbrosialItems.TOMATO.get());
         tag(ForgeTags.VEGETABLES_CABBAGE).add(AmbrosialItems.CABBAGE.get());
         tag(ForgeTags.VEGETABLES_RADISH).add(AmbrosialItems.RADISH.get());
+
+        tag(ForgeTags.SEEDS).addTags(
+                ForgeTags.SEEDS_KIWI,
+                ForgeTags.SEEDS_RADISH);
+        tag(ForgeTags.SEEDS_KIWI).add(AmbrosialItems.KIWI_SEED.get());
+        tag(ForgeTags.SEEDS_RADISH).add(AmbrosialItems.RADISH_SEED.get());
     }
 }

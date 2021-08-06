@@ -5,7 +5,6 @@ import net.minecraftforge.common.MinecraftForge;
 public class EventsHandler {
 
     public static void setupEvents() {
-        MinecraftForge.EVENT_BUS.register(new TemptationTask());
-        MinecraftForge.EVENT_BUS.register(new BreedingTask());
+        MinecraftForge.EVENT_BUS.register(new TemptationEvent());
     }
 }

@@ -19,7 +19,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 @SuppressWarnings("deprecation")
-public class KiwiBushBlock extends GrowableBushBlock {
+public class KiwiBushBlock extends BaseBushBlock {
 
     private static final int KIWI_BEARING_AGE = 7;
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[] {

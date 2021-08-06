@@ -1,6 +1,6 @@
 package kiwi.ambrosial.blocks.crops;
 
-import kiwi.ambrosial.items.BushSeedItem;
+import kiwi.ambrosial.items.SeedItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -23,12 +23,12 @@ import net.minecraftforge.common.PlantType;
 import java.util.Random;
 
 @SuppressWarnings({"unused", "deprecation"})
-public class GrowableBushBlock extends BushBlock implements BonemealableBlock {
+public class BaseBushBlock extends BushBlock implements BonemealableBlock {
 
     public static final IntegerProperty AGE = BlockStateProperties.AGE_7;
-    private BushSeedItem seed;
+    private SeedItem seed;
 
-    public GrowableBushBlock(Block.Properties properties) {
+    public BaseBushBlock(Block.Properties properties) {
         super(properties);
     }
 
@@ -149,7 +149,7 @@ public class GrowableBushBlock extends BushBlock implements BonemealableBlock {
     protected boolean mayPlaceOn(BlockState state, BlockGetter world, BlockPos pos) {
         return state.getBlock() instanceof FarmBlock;
     }
-    public void setSeed(BushSeedItem seed) {
+    public void setSeed(SeedItem seed) {
         this.seed = seed;
     }
 
