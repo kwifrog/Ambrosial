@@ -1,7 +1,6 @@
 package kiwi.ambrosial.data;
 
 import kiwi.ambrosial.Ambrosial;
-import kiwi.ambrosial.registry.AmbrosialBlocks;
 import kiwi.ambrosial.registry.AmbrosialItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
@@ -15,6 +14,7 @@ public class ModLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         add("itemGroup.ambrosial", "Ambrosial");
+        add("ambrosial.item.kiwi.pick_from_bush", "Kiwis pop");
 
         add(AmbrosialItems.RASPBERRY.get(), "Raspberries");
         add(AmbrosialItems.BLUEBERRY.get(), "Blueberries");
