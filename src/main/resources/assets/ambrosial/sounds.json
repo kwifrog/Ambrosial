@@ -1,4 +1,34 @@
 {
+  "block.cooker.crackle": {
+    "category": "block",
+    "subtitle": "ambrosial.subtitles.cooker.crackle",
+    "sounds": [
+      {
+        "name": "block/campfire/crackle1",
+        "stream": true
+      },
+      {
+        "name": "block/campfire/crackle2",
+        "stream": true
+      },
+      {
+        "name": "block/campfire/crackle3",
+        "stream": true
+      },
+      {
+        "name": "block/campfire/crackle4",
+        "stream": true
+      },
+      {
+        "name": "block/campfire/crackle5",
+        "stream": true
+      },
+      {
+        "name": "block/campfire/crackle6",
+        "stream": true
+      }
+    ]
+  },
   "item.kiwi.pick_from_bush": {
     "category": "block",
     "subtitle": "ambrosial.subtitles.kiwi.pick",

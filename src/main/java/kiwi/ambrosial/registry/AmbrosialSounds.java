@@ -9,6 +9,9 @@ import net.minecraftforge.fmllegacy.RegistryObject;
 @Mod.EventBusSubscriber(modid = Ambrosial.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AmbrosialSounds {
 
+    public static final RegistryObject<SoundEvent> BLOCK_COOKER_CRACKLE = RegistryHandler.SOUNDS.register("block.cooker.crackle",
+            () -> new SoundEvent(new ResourceLocation(Ambrosial.MODID, "block.cooker.crackle")));
+
     public static final RegistryObject<SoundEvent> ITEM_KIWI_PICK_FROM_BUSH = RegistryHandler.SOUNDS.register("item.kiwi.pick_from_bush",
             () -> new SoundEvent(new ResourceLocation(Ambrosial.MODID, "item.kiwi.pick_from_bush")));
 

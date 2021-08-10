@@ -3,7 +3,7 @@ package kiwi.ambrosial.registry;
 import kiwi.ambrosial.items.AmbrosialFood;
 import kiwi.ambrosial.items.FoodPigItem;
 import kiwi.ambrosial.items.FoodRabbitItem;
-import kiwi.ambrosial.items.SeedItem;
+import kiwi.ambrosial.items.FoodSeedItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.fmllegacy.RegistryObject;
 
@@ -28,8 +28,8 @@ public class AmbrosialItems {
     public static final RegistryObject<Item> CABBAGE = RegistryHandler.ITEMS.register("cabbage", () -> new FoodPigItem(new Item.Properties().food(AmbrosialFood.CABBAGE)));
 
     /* Seeds */
-    public static final RegistryObject<Item> RADISH_SEED = RegistryHandler.ITEMS.register("radish_seeds", () -> new SeedItem(AmbrosialBlocks.RADISH_CROP.get(), new Item.Properties()));
-    public static final RegistryObject<Item> KIWI_SEED = RegistryHandler.ITEMS.register("kiwi_seeds", () -> new SeedItem(AmbrosialBlocks.KIWI_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RADISH_SEED = RegistryHandler.ITEMS.register("radish_seeds", () -> new FoodSeedItem(AmbrosialBlocks.RADISH_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> KIWI_SEED = RegistryHandler.ITEMS.register("kiwi_seeds", () -> new FoodSeedItem(AmbrosialBlocks.KIWI_CROP.get(), new Item.Properties()));
 
     /* Herbs */
 

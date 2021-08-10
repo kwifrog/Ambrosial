@@ -1,6 +1,6 @@
 package kiwi.ambrosial.blocks.crops;
 
-import kiwi.ambrosial.items.SeedItem;
+import kiwi.ambrosial.items.FoodSeedItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
@@ -22,7 +22,7 @@ public class BaseCropBlock extends CropBlock {
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 9.0D, 16.0D),
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D)
     };
-    private SeedItem seed;
+    private FoodSeedItem seed;
 
     public BaseCropBlock(Block.Properties properties) {
         super(properties);
@@ -38,7 +38,7 @@ public class BaseCropBlock extends CropBlock {
         return SHAPE_BY_AGE[state.getValue(this.getAgeProperty())];
     }
 
-    public void setSeed(SeedItem seed) {
+    public void setSeed(FoodSeedItem seed) {
         this.seed = seed;
     }
 
