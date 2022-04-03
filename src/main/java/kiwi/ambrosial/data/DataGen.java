@@ -8,7 +8,6 @@ import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGen {
-
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator gen = event.getGenerator();
@@ -16,6 +15,7 @@ public class DataGen {
 
         if (event.includeServer()) {
             gen.addProvider(new ModRecipeProvider(gen));
+            gen.addProvider(new ModLootTableProvider(gen));
             ModBlockTagProvider blockTags = new ModBlockTagProvider(gen, helper);
             gen.addProvider(new ModItemTagProvider(gen, blockTags, helper));
         }
