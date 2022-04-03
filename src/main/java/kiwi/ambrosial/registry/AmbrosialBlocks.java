@@ -22,10 +22,12 @@ public class AmbrosialBlocks {
 
 
     /* Crops */
+    //TODO Add all crops as growable
     public static final RegistryObject<Block> RADISH_CROP = registerNoItem("radishes", () -> new BaseCropBlock(Block.Properties.copy(Blocks.CARROTS)));
     public static final RegistryObject<Block> KIWI_CROP = registerNoItem("kiwis", () -> new KiwiBushBlock(Block.Properties.copy(Blocks.WHEAT)));
 
     /* Crop Storage */
+    //TODO Crop Bushels
    /* public static final RegistryObject<Block> RASPBERRY_BUSHEL = register("raspberry_bushel", () ->
             new Block(Block.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.AZALEA).friction(0.8F)));*/
 

@@ -16,6 +16,7 @@ public class ClientEventHandler {
         TagTooltip.init();
         CropRenderer.registerCutout();
 
+
     }
 
 }

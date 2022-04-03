@@ -77,7 +77,7 @@ public class ForgeTags {
     public static final Tag.Named<Item> SEEDS_KIWI = forgeItemTag("seeds/kiwi");
     public static final Tag.Named<Item> SEEDS_RADISH = forgeItemTag("seeds/radish");
 
-    private  static Tag.Named<Item> forgeItemTag(String path) {
+    private static Tag.Named<Item> forgeItemTag(String path) {
         return ItemTags.bind(new ResourceLocation("forge", path).toString());
     }
 
